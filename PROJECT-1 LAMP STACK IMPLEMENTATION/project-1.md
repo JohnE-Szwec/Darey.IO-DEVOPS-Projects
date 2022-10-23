@@ -134,7 +134,7 @@ sudo mysql
 ```
 ![SQL-login](./images/sqllogin.PNG)
 ___
-### <div align="center"> Step 2) Installing PHP </div>
+### <div align="center"> Step 3) Installing PHP </div>
 I now have Apache installed to serve my content and MySQL installed to store and manage my data. PHP is the component of my setup that will process code to display dynamic content to the end user. In addition to the php package, I'll need php-mysql, a PHP module that allows PHP to communicate with MySQL-based databases. I’ll also need libapache2-mod-php to enable Apache to handle PHP files. Core PHP packages will automatically be installed as dependencies.
 
 To install these 3 packages at once, I will run:
@@ -148,3 +148,5 @@ I run the following command to confirm my PHP version:
 php -v
 ```
 ![PHP-version](./images/phpversion.PNG)
+___
+### <div align="center"> Step 4) Creatring a virtual host for my website using Apache </div>
