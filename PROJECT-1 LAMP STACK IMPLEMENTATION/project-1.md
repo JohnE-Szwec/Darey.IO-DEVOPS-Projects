@@ -159,7 +159,7 @@ sudo mkdir /var/www/lampproject                          ### Ceate Web dcoument 
 sudo chown -R $USER:$USER /var/www/lampproject           ### Assign ownership of directory to curent system user
 sudo vi /etc/apache2/sites-available/lampproject.conf    ### Create new configuration for for Apaches sites-availalble
 ```
-Cnotentsof new configuraion file - lampproject.conf
+Contents of new configuraion file - lampproject.conf
 ```
 <VirtualHost *:80>
     ServerName projectlamp
