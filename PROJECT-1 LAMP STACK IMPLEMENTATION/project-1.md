@@ -156,7 +156,7 @@ To test my setup with a PHP script, I will set up a proper Apache Virtual Host t
 I wil create the directory for my lamproject using ‘mkdir’ command as follows:
 ```
 sudo mkdir /var/www/lampproject                          ### Ceate Web dcoument directory
-sudo chown -R $USER:$USER /var/www/lampproject           ### Assign ownership of directory to curent system user
+sudo chown -R $USER:$USER /var/www/lampproject           ### Assign ownership of new Web docuemnt directory to curent system user
 sudo vi /etc/apache2/sites-available/lampproject.conf    ### Create new configuration for for Apaches sites-availalble
 ```
 Contents of new configuraion file - lampproject.conf
