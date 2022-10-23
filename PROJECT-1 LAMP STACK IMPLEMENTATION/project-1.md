@@ -143,7 +143,7 @@ To install these 3 packages at once, I will run:
 sudo apt install php libapache2-mod-php php-mysql
 ```
 
-I run the following command to confirm your PHP version:
+I run the following command to confirm my PHP version:
 ```
 php -v
 ```
