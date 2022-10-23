@@ -153,7 +153,7 @@ ___
 To test my setup with a PHP script, I will set up a proper Apache Virtual Host to hold my website’s files and folders. Virtual host allows me to have multiple websites located on a single machine and users of my websites will not even notice it. (illistrated below) <br/>
 ![VirtualHost](./images/VirtualHost.png)
 
-I wil create the directory for my lamproject using ‘mkdir’ command as follows:
+I will create the directory for my lamproject using ‘mkdir’ command as follows:
 ```
 sudo mkdir /var/www/lampproject                          ### Ceate Web dcoument directory
 sudo chown -R $USER:$USER /var/www/lampproject           ### Assign ownership of new Web docuemnt directory to curent system user
@@ -169,4 +169,17 @@ Contents of new configuraion file - lampproject.conf
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
+```
+Now i use the following set of commands to to enable my new virtual host and disable Apaches default website and then relaod apache.
+```
+sudo a2ensite lampproject                                ### 
+sudo a2dissite 000-default                               ###
+sudo apache2ctl configtest                               ###  make sure my configuration file doesn’t contain syntax errors
+sudo systemctl reload apache2                            ###
+```
+
+Now I will create an index.html file in my /var/www/projectlamp folder so that I can test that the virtual host works as expected:
+
+```
+sudo echo 'Hello LAMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectlamp/index.html
 ```
