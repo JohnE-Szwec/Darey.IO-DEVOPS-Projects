@@ -186,3 +186,6 @@ $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projec
 ```
 My Apache virtual host is working as expected. I can access it from my local machines browser using it's DNS name.
 ![VirtualHostWorking](./images/websitefrombrowser.PNG)
+
+___
+### <div align="center"> Step 5) Enable PHP on my website </div>
