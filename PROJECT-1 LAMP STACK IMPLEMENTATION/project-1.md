@@ -147,3 +147,4 @@ I run the following command to confirm your PHP version:
 ```
 php -v
 ```
+![PHP-version](./images/phpversion.PNG)
