@@ -151,4 +151,4 @@ php -v
 ___
 ### <div align="center"> Step 4) Creatring a virtual host for my website using Apache </div>
 To test my setup with a PHP script, I will set up a proper Apache Virtual Host to hold my website’s files and folders. Virtual host allows me to have multiple websites located on a single machine and users of my websites will not even notice it. (illistrated below) <br/>
-![VirtualHost](../images/VirtualHost.PNG)
+![VirtualHost](./images/VirtualHost.PNG)
