@@ -165,7 +165,7 @@ Contents of new configuraion file - lampproject.conf
     ServerName projectlamp
     ServerAlias www.projectlamp 
     ServerAdmin webmaster@localhost
-    DocumentRoot /var/www/projectlamp
+    DocumentRoot /var/www/projectlamp------------------- ### This line configures my new directory as Apache's web root directory
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
