@@ -204,4 +204,5 @@ phpinfo();
 ```
 
 Finally , the browser renders the following page which provides inforamtion about my server from the perspective of PHP.
+
 ![PHPPageWorking](./images/phppagerendered.PNG)
