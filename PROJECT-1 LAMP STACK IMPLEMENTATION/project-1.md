@@ -189,3 +189,19 @@ My Apache virtual host is working as expected. I can access it from my local mac
 
 ___
 ### <div align="center"> Step 5) Enable PHP on my website </div>
+Modify the /etc/apache2/mods-enabled/dir.conf in order to change Apache's default behavior which is to load an html file over a php file <br/>
+and restart apache 
+```
+<IfModule mod_dir.c>
+                DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
+</IfModule>
+```
+I create a new index.php file in my custonm web root folder and add teh following code
+_vim /var/www/projectlamp/index.php_
+```
+<?php
+phpinfo();
+```
+
+Finally , the browser renders the following page which provides inforamtion about my server from the perspective of PHP.
+![PHPPageWorking](./images/phppagerendered.PNG)
