@@ -184,3 +184,5 @@ Now I will create an index.html file in my /var/www/projectlamp folder so that I
 sudo echo 'Hello LAMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' <br/> 
 $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectlamp/index.html
 ```
+My Apache virtual host is working as expected. I can access it from my local machines browser using it's DNS name.
+![VirtualHostWorking](./images/websitefrombrowser.PNG)
