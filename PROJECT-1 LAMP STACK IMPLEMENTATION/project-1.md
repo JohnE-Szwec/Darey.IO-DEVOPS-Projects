@@ -152,3 +152,21 @@ ___
 ### <div align="center"> Step 4) Creatring a virtual host for my website using Apache </div>
 To test my setup with a PHP script, I will set up a proper Apache Virtual Host to hold my website’s files and folders. Virtual host allows me to have multiple websites located on a single machine and users of my websites will not even notice it. (illistrated below) <br/>
 ![VirtualHost](./images/VirtualHost.png)
+
+I wil create the directory for my lamproject using ‘mkdir’ command as follows:
+```
+sudo mkdir /var/www/lampproject                          ### Ceate Web dcoument directory
+sudo chown -R $USER:$USER /var/www/lampproject           ### Assign ownership of directory to curent system user
+sudo vi /etc/apache2/sites-available/lampproject.conf    ### Create new configuration for for Apaches sites-availalble
+```
+Cnotentsof new configuraion file - lampproject.conf
+```
+<VirtualHost *:80>
+    ServerName projectlamp
+    ServerAlias www.projectlamp 
+    ServerAdmin webmaster@localhost
+    DocumentRoot /var/www/projectlamp
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+```
