@@ -170,7 +170,7 @@ Contents of new configuraion file - lampproject.conf
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
 ```
-Now i use the following set of commands to to enable my new virtual host and disable Apaches default website and then relaod apache.
+Now I use the following set of commands to enable my new virtual host and disable Apaches default website and then reload apache.
 ```
 sudo a2ensite lampproject                                ### 
 sudo a2dissite 000-default                               ###
