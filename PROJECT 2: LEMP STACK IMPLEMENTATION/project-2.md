@@ -13,7 +13,7 @@ sudo apt install nginx        # install nginx
 ![updatepackageindex](./images/packageindex.PNG)
 __Confirm install by answering "y"__
 ![Nginxconfirnm](./images/nginxconfirminstall2.PNG)
-__Ensure Nginx is active ---> See the green text active (running) status__
+__When the install procedure returns to the console prompt.. I ensure NGINX is active ---> See the green text active (running) status__
 ![Nginxrunning](./images/nginxrunning2.PNG)
 
 On the creation page i  added a new security group name and a description, clicked add rule under inbound rules to add source ip address. I chose Custom TCP i the __type__ section and entered 22 the (SSH TCP port) in the __port range__ seection. I entered my WAN IP address in the Source IP address box with a /32 so only I have acess to the instance
