@@ -16,7 +16,7 @@ __Confirm install by answering "y"__
 __When the install procedure returns to the console prompt.. I ensure NGINX is active ---> See the green text active (running) status__
 ![Nginxrunning](./images/nginxrunning2.PNG)
 
-###### * I have edited my security group to allow inbound connections on HTTP TCP port 80 which is the default port that web brousers use to access web pages in the Internet.
+###### * I have edited my security group to allow inbound connections on HTTP TCP port 80 which is the default port that web browsers use to access web pages on the Internet.
 
 First, I check if i can access my NGINX server locally from my Ubuntu shell using the command.
 ```
