@@ -1,5 +1,5 @@
 # <div align="center"> Installing a LEMP Stack in AWS / Project-2 </div>
-#### LEMP is an open-source web application stack used to develop web applications. The term LEMP is an acronym that represents L for the Linux Operating system, Nginx (pronounced as engine-x, hence the E in the acronym) web server, M for MySQL database, and P for PHP scripting language.
+#### LEMP is an open-source web application stack used to develop web applications. The term LEMP is an acronym that represents L for the Linux Operating system, NGINX (pronounced as engine-x, hence the E in the acronym) web server, M for MySQL database, and P for PHP scripting language.
 ___
 ###### * This project has a prerequistie of creating an Ubuntu EC2 instance on my personal AWS account. That instance has a security policy attached which allows me to log into it using SSH on port22 from my local laptop. The creation and setup of this instance is not documented here. 
 
@@ -7,7 +7,7 @@ __Step 1__ – Installing the Nginx Web Server
 After logging in to the new Ubuntu server from my local Windows terminal, I performed the following commnads to install NGINX
 ```
 sudo apt update               # upate the servers package index
-sudo apt install nginx        # install nginx
+sudo apt install nginx        # install NGINX
 ```
 
 ![updatepackageindex](./images/packageindex.PNG)
@@ -22,15 +22,15 @@ First, I check if i can access my NGINX server locally from my Ubuntu shell usin
 ```
 curl http://127.0.0.1:80
 ```
-My Nginx web service responds to the ‘curl’ command with some payload.
+My NGINX web service responds to the ‘curl’ command with some payload.
 ![Nginxresponds](./images/nginxresponds.PNG)
 
-Now it is time for me to test if my Nginx server can respond to requests from the Internet.
+Now it is time for me to test if my NGINX server can respond to requests from the Internet.
 From my web browser I try to access the NGINX server with the following url
 ```
 http://<Public-IP-Address>:80
 ```
-I can find the public ip address of my web server with the following command from teh console
+I can find the public ip address of my web server with the following command from the console
 ```
 curl -s http://169.254.169.254/latest/meta-data/public-ipv4
 ```
