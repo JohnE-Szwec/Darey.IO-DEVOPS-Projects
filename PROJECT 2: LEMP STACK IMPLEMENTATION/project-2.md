@@ -37,6 +37,7 @@ curl -s http://169.254.169.254/latest/meta-data/public-ipv4
 And use that IP address in my URL as follows:
 
 ![EnterinBrowser](./images/browserpublicip.PNG)
+__My new NGINX server is responding to my requests over the Internet__
 ![RespondsOverInternet](./images/respondsoverinternet.PNG)
 
 
