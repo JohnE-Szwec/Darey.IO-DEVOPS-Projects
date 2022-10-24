@@ -55,16 +55,20 @@ systemctl status mysql
 ```
 ![SQL-running](./images/sqlrunning.PNG)
 
-Now i am able to login as root (which is inferred by the use of sudo) to the Mysql server from the remote console
+Now i am able to login as root (which is inferred by the use of sudo) to the Mysql server from the remote console <br/>
+At this time I will also set a password for the root user using the following commands
+
 ```
 sudo mysql
 ```
-This brings me to a mysql> prompt on the console
+__This brings me to a mysql> prompt on the console__
+```
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '******';
+```
 
-Now I will set a password for root user using using mysql_native_password as default authentication method
-```
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '******'; NOTE: the actual Passowrd in this illustration has been astericked out
-```
+
+
+![login-SQL](./images/loginandsetpassword.PNG)
 I then exit the mysql shell with the exit command
 ```
 mysql> exit
@@ -75,7 +79,7 @@ I chose the least restrictive responeses since this is a Lab environment.
 
 Now I test to see if i can log into mysql console
 ```
-sudo mysql
+sudo mysql -p
 ```
 ![SQL-login](./images/sqllogin.PNG)
 ___
