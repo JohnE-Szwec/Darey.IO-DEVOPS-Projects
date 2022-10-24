@@ -18,6 +18,13 @@ __When the install procedure returns to the console prompt.. I ensure NGINX is a
 
 ###### * I have edited my security group to allow inbound connections on HTTP TCP port 80 which is the default port that web brousers use to access web pages in the Internet.
 
+First, I check if i can access my NGINX server locally from my Ubuntu shell using the command.
+```
+curl http://127.0.0.1:80
+```
+My Nginx web service responds to ‘curl’ command with some payload.
+![Nginxresponds](./images/nginxresponds2.PNG)
+
 
 On the creation page i  added a new security group name and a description, clicked add rule under inbound rules to add source ip address. I chose Custom TCP i the __type__ section and entered 22 the (SSH TCP port) in the __port range__ seection. I entered my WAN IP address in the Source IP address box with a /32 so only I have acess to the instance
 
