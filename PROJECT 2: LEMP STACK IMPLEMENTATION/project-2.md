@@ -16,6 +16,9 @@ __Confirm install by answering "y"__
 __When the install procedure returns to the console prompt.. I ensure NGINX is active ---> See the green text active (running) status__
 ![Nginxrunning](./images/nginxrunning2.PNG)
 
+###### * I have edited my security group to allow inbound connections on HTTP TCP port 80 which is default port that web brousers use to access web pages in the Internet.
+
+
 On the creation page i  added a new security group name and a description, clicked add rule under inbound rules to add source ip address. I chose Custom TCP i the __type__ section and entered 22 the (SSH TCP port) in the __port range__ seection. I entered my WAN IP address in the Source IP address box with a /32 so only I have acess to the instance
 
 ![securityGroup](./images/secgrp2.PNG)
