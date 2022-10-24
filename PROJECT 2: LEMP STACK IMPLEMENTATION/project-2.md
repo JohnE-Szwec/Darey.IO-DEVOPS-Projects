@@ -1,13 +1,16 @@
-# <div align="center"> Installing a LEMP Stack in AWS / Project-2</div>
-
+# <div align="center"> Installing a LEMP Stack in AWS / Project-2 </div>
 #### LEMP is an open-source web application stack used to develop web applications. The term LEMP is an acronym that represents L for the Linux Operating system, Nginx (pronounced as engine-x, hence the E in the acronym) web server, M for MySQL database, and P for PHP scripting language.
+___
+###### * This project has a prerequistie of creating an Ubuntu EC2 instance on AWS with a security policy attached which allows me to log into it using SSH on port22  which the creation and setup of is not documented here. 
 
-I created an Ubuntu EC2 instance in my AWS console for the NGINX Web Server
+Step 1 – Installing the Nginx Web Server
+After logging in to the new Ubuntu server from your Windows terminal perform the following commnads to install NGINX
+```
+sudo apt update               # upate the servers package index
+sudo apt install nginx        # install nginx
+```
 
-From an AWS acount navigate to the EC2 service and choose __Security Groups__ under the __Network & Security__ header on the left pane <br/>
-Then click create security group on the orange button on the upper right corner of the screen <br/> 
-
-![securityGroup](./images/createsecgrp.PNG) <br/>
+![updatepackageindex](./images/packageindex.PNG)
 
 
 On the creation page i  added a new security group name and a description, clicked add rule under inbound rules to add source ip address. I chose Custom TCP i the __type__ section and entered 22 the (SSH TCP port) in the __port range__ seection. I entered my WAN IP address in the Source IP address box with a /32 so only I have acess to the instance
