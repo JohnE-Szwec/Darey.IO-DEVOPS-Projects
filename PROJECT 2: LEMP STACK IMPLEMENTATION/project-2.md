@@ -37,7 +37,7 @@ curl -s http://169.254.169.254/latest/meta-data/public-ipv4
 And use that IP address in my URL as follows:
 
 ![EnterinBrowser](./images/browserpublicip.PNG)
-![RespindsOverInternet](./images/respndsoverinternet.PNG)
+![RespondsOverInternet](./images/respndsoverinternet.PNG)
 
 
 
