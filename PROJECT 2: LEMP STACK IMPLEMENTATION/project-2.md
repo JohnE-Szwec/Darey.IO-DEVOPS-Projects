@@ -22,8 +22,22 @@ First, I check if i can access my NGINX server locally from my Ubuntu shell usin
 ```
 curl http://127.0.0.1:80
 ```
-My Nginx web service responds to ‘curl’ command with some payload.
+My Nginx web service responds to the ‘curl’ command with some payload.
 ![Nginxresponds](./images/nginxresponds.PNG)
+
+Now it is time for me to test if my Nginx server can respond to requests from the Internet.
+From my web browser I try to access the NGINX server with the following url
+```
+http://<Public-IP-Address>:80
+```
+I can find the public ip address of my web server with the following command from teh console
+```
+curl -s http://169.254.169.254/latest/meta-data/public-ipv4
+```
+And use that IP address in my URL as follows:
+
+
+
 
 
 On the creation page i  added a new security group name and a description, clicked add rule under inbound rules to add source ip address. I chose Custom TCP i the __type__ section and entered 22 the (SSH TCP port) in the __port range__ seection. I entered my WAN IP address in the Source IP address box with a /32 so only I have acess to the instance
