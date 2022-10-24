@@ -48,6 +48,7 @@ I use ‘apt’ run from the SSH session to acquire and install this software:
 ```
 sudo apt install mysql-server
 ```
+![InstallSQL](./images/Installmysqlserver.PNG)
 I then check if SQL is up and running after the install with the command
 ```
 systemctl status mysql
