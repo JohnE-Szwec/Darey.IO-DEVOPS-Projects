@@ -90,23 +90,8 @@ To install these 2 packages at once, I will run:
 ```
 sudo apt install php-fpm php php-mysql
 ```
-
-When the PHP install is completed, I run the following command to confirm my PHP version:
-```
-php -v
-```
 ![PHP-version](./images/installphpandversion.PNG)
-
-Activate and test my configuration by linking to the config file from Nginx’s sites-enabled directory:
-This will create a soft link to tell Nginx to use the configuration next time it is reloaded.
-```
-sudo ln -s /etc/nginx/sites-available/lempproject /etc/nginx/sites-enabled/
-sudo nginx -t
-```
-![Link-and Check](./images/symboliclinkandcheck.PNG)
 ___
-
-
 ### <div align="center"> Step 4 — Configuring NGINX to Use PHP Processor </div>
 NGINX uses server blocks to host more than one domain on a single server.
 I will create a new directory on the server to host my new website leaving the default NGINX domain directory in tact.
@@ -118,11 +103,11 @@ sudo nano /etc/nginx/sites-available/lempproject.conf    ### Create new configur
 ![configure-PHP](./images/configurephp.PNG)
 Contents of new configuraion file - lempproject.conf
 ```
-#/etc/nginx/sites-available/projectLEMP
+#/etc/nginx/sites-available/lempproject
 
 server {
     listen 80;                                              # Defines what port NGINX will listen on
-    server_name projectLEMP www.projectLEMP;                # Defines which domain names and/or IP addresses this server block should respond for.
+    server_name lempproject www.lempproject;                # Defines which domain names and/or IP addresses this server block should respond for.
     root /var/www/projectLEMP;                              # Defines the document root where the files served by this website are stored.
 
     index index.html index.htm index.php;                   # Defines in which order NGINX will prioritize index files for this website
@@ -152,6 +137,15 @@ sudo a2dissite 000-default                               ###
 sudo apache2ctl configtest                               ###  make sure my configuration file doesn’t contain syntax errors
 sudo systemctl reload apache2                            ###
 ```
+Activate and test my configuration by linking to the config file from Nginx’s sites-enabled directory:
+This will create a soft link to tell Nginx to use the configuration next time it is reloaded.
+```
+sudo ln -s /etc/nginx/sites-available/lempproject /etc/nginx/sites-enabled/
+sudo nginx -t
+```
+![Link-and Check](./images/symboliclinkandcheck.PNG)
+
+
 
 Now I will create an index.html file in my /var/www/projectlamp folder so that I can test that the virtual host works as expected:
 
