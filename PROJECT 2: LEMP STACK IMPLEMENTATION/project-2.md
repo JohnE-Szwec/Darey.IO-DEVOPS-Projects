@@ -61,12 +61,10 @@ At this time I will also set a password for the root user using the following co
 ```
 sudo mysql
 ```
-__This brings me to a mysql> prompt on the console__
+This brings me to a mysql> prompt on the console
 ```
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '******';
 ```
-
-
 
 ![login-SQL](./images/loginandsetpassword.PNG)
 I then exit the mysql shell with the exit command
