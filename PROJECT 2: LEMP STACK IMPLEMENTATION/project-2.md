@@ -156,7 +156,7 @@ ___
 ### <div align="center"> Step 5) - Testing PHP with Nginx </div>
 
 Now I need to test if my new NGINX server can handle a PHP file.<br/>
-I can do this by creating a file called 'info.php' 
+I can do this by creating a file called 'info.php' inside my new domains web directory
 
 ```
 sudo nano /var/www/lempproject/info.php
