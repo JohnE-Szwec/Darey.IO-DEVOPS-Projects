@@ -173,6 +173,8 @@ This is valid PHP code that will return information about my server.
 My local browser is successful in retrieving data from my new NGINX webserver utilizing PHP interpreter
 ![PHPWorking](./images/phpsuccess.PNG)
 
+### <div align="center"> Step 6) - Testing PHP with Nginx </div>
+
 *
 *
 *
