@@ -107,20 +107,35 @@ sudo mkdir /var/www/lempproject                          ### Ceate Web dcoument 
 sudo chown -R $USER:$USER /var/www/lempproject           ### Assign ownership of new Web docuemnt directory to curent system user
 sudo nano /etc/nginx/sites-available/lempproject.conf    ### Create new configuration for NGINX's sites-availalble
 ```
-
-![VirtualHost](./images/VirtualHost.png)
-
 Contents of new configuraion file - lempproject.conf
 ```
-<VirtualHost *:80>
-    ServerName projectlamp
-    ServerAlias www.projectlamp 
-    ServerAdmin webmaster@localhost
-    DocumentRoot /var/www/projectlamp------------------- ### This line configures my new directory as Apache's web root directory
-    ErrorLog ${APACHE_LOG_DIR}/error.log
-    CustomLog ${APACHE_LOG_DIR}/access.log combined
-</VirtualHost>
+#/etc/nginx/sites-available/projectLEMP
+
+server {
+    listen 80;
+    server_name projectLEMP www.projectLEMP;
+    root /var/www/projectLEMP;
+
+    index index.html index.htm index.php;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/var/run/php/php8.1-fpm.sock;
+     }
+
+    location ~ /\.ht {
+        deny all;
+    }
+
+}
 ```
+![VirtualHost](./images/configurephp.png)
+
+
 Now I use the following set of commands to enable my new virtual host and disable Apaches default website and then reload apache.
 ```
 sudo a2ensite lampproject                                ### 
