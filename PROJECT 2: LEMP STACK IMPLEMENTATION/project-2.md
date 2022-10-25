@@ -185,7 +185,7 @@ mysql> GRANT ALL ON example_database.* TO 'example_user'@'%';
 ```
 ![Create-Base](./images/createsqldbanduser.PNG)
 
-Now i show the new example_user can access the database locally
+Now I test that my new database user 'example_user' can access the database locally.
 ![NewUserAccessDB](./images/newuseraccessdb.PNG)
 *
 *
