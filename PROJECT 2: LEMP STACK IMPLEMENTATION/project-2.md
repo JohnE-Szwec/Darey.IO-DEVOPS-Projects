@@ -94,7 +94,7 @@ sudo apt install php-fpm php php-mysql
 ```
 ![PHP-version](./images/installphpandversion.PNG)
 ___
-### <div align="center"> Step 4 — Configuring NGINX to Use PHP Processor </div>
+### <div align="center"> Step 4 - Configuring NGINX to Use PHP Processor </div>
 NGINX uses server blocks to host more than one domain on a single server.
 I will create a new directory on the server to host my new website leaving the default NGINX domain directory in tact.
 ```
