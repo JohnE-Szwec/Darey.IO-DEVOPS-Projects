@@ -101,18 +101,15 @@ ___
 
 ### <div align="center"> Step 4 — Configuring NGINX to Use PHP Processor </div>
 NGINX uses server blocks to host more than one domain on a single server.
-I will create a new diredctoy on the server to host my new website leaving th default NGINX default domain in tact.
-````
-sudo mkdir /var/www/projectLEMP
-```
-![VirtualHost](./images/VirtualHost.png)
-
-I will create the directory for my lamproject using ‘mkdir’ command as follows:
+I will create a new directory on the server to host my new website leaving the default NGINX domain directory in tact.
 ```
 sudo mkdir /var/www/lempproject                          ### Ceate Web dcoument directory
 sudo chown -R $USER:$USER /var/www/lempproject           ### Assign ownership of new Web docuemnt directory to curent system user
 sudo nano /etc/nginx/sites-available/lempproject.conf    ### Create new configuration for NGINX's sites-availalble
 ```
+
+![VirtualHost](./images/VirtualHost.png)
+
 Contents of new configuraion file - lempproject.conf
 ```
 <VirtualHost *:80>
