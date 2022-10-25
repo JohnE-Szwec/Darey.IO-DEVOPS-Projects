@@ -43,7 +43,6 @@ ___
 ### <div align="center"> Step 2) Installing MySQL </div>
 
 Now that I have a web server up and running, I need to install a Database Management System (DBMS) to be able to store and manage data for my site in a relational database. MySQL is a popular relational database management system used within PHP environments, so I will use it in my project.
-
 I use ‘apt’ run from the SSH session to acquire and install this software:
 ```
 sudo apt install mysql-server
@@ -54,7 +53,6 @@ I then check if SQL is up and running after the install with the command
 systemctl status mysql
 ```
 ![SQL-running](./images/sqlrunning.PNG)
-
 Now i am able to login as root (which is inferred by the use of sudo) to the Mysql server from the remote console <br/>
 At this time I will also set a password for the root user using the following commands
 
