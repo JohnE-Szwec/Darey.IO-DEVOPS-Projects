@@ -161,7 +161,7 @@ I can do this by creating a file called 'info.php'
 ```
 sudo nano /var/www/lempproject/info.php
 ```
-Then, entering the following code into that file
+Then entering the following code into that file
 
 '''
 <?php
