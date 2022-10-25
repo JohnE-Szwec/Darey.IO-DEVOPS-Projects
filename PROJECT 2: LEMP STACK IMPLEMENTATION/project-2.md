@@ -136,16 +136,27 @@ sudo nginx -t
 ```
 ![Link-and Check](./images/symboliclinkandcheck.PNG)
 
+Disable the default Nginx host that is currently configured to listen on 
+```
+sudo unlink /etc/nginx/sites-enabled/default
+```
 
-
-Now I will create an index.html file in my /var/www/projectlamp folder so that I can test that the virtual host works as expected:
+Now I will create an index.html file in my /var/www/lempproject folder so that I can test that the virtual host works as expected:
 
 ```
 sudo echo 'Hello LAMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' <br/> 
-$(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectlamp/index.html
+$(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/lempproject/index.html
 ```
 My Apache virtual host is working as expected. I can access it from my local machines browser using it's DNS name.
 ![VirtualHostWorking](./images/websitefrombrowser.PNG)
+
+*
+*
+*
+*
+*
+*
+*
 
 ___
 ### <div align="center"> Step 5) Enable PHP on my website </div>
