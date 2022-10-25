@@ -157,15 +157,17 @@ ___
 
 Now I need to test if my new NGINX server can handle a PHP file.<br/>
 I can do this by creating a file called 'info.php' 
+
 ```
 sudo nano /var/www/lempproject/info.php
 ```
 Then, entering the following code into that file
+
 '''
 <?php
 phpinfo();
 ```
-This is valid PHP code that will return information about my server:
+This is valid PHP code that will return information about my server.
 
 My local browser is successful in retrieving data from my new NGINX webserver utilizing PHP interpreter
 ![PHPWorking](./images/phpsuccess.PNG)
