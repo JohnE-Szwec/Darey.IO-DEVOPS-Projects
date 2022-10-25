@@ -103,7 +103,7 @@ This will create a soft link to tell Nginx to use the configuration next time it
 sudo ln -s /etc/nginx/sites-available/lempproject /etc/nginx/sites-enabled/
 sudo nginx -t
 ```
-
+![Link-and Check](./images/symboliclinkandcheck.PNG)
 ___
 
 
