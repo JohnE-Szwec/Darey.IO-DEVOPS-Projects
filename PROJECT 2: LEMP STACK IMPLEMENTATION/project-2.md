@@ -81,12 +81,13 @@ sudo mysql -p
 I am able to successfully login to my SQL server with the configured password
 ___
 ### <div align="center"> Step 3) Installing PHP </div>
-I now have Apache installed to serve my content and MySQL installed to store and manage my data. PHP is the component of my setup that will process code to display dynamic content to the end user. In addition to the php package, I'll need php-mysql, a PHP module that allows PHP to communicate with MySQL-based databases. I’ll also need libapache2-mod-php to enable Apache to handle PHP files. Core PHP packages will automatically be installed as dependencies.
+I’ll need to install php-fpm, which stands for “PHP fastCGI process manager”, and tell Nginx to pass PHP requests to this software for processing. 
+In addition I will also need php-mysql, a PHP module that allows PHP to communicate with MySQL-based databases. 
 
-To install these 3 packages at once, I will run:
+To install these 2 packages at once, I will run:
 
 ```
-sudo apt install php libapache2-mod-php php-mysql
+sudo apt install php-fpm php php-mysql
 ```
 
 I run the following command to confirm my PHP version:
