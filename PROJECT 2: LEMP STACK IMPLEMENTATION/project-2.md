@@ -75,7 +75,7 @@ mysql> exit
 ```
 At this point it is recommended that you run a security script that comes pre-installed with MySQL. This script will remove some insecure default settings and lock down access to your database system <br/>
 I chose the least restrictive responeses since this is a Lab environment.
-![SQL-secure](./images/securesql.PNG)
+![SQL-secure](./images/sqlsecurityscript.PNG)
 
 Now I test to see if i can log into mysql console
 ```
