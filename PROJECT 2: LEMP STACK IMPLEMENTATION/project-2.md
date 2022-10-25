@@ -112,22 +112,22 @@ Contents of new configuraion file - lempproject.conf
 #/etc/nginx/sites-available/projectLEMP
 
 server {
-    listen 80;
-    server_name projectLEMP www.projectLEMP;
-    root /var/www/projectLEMP;
+    listen 80;                                              # Defines what port NGINX will listen on
+    server_name projectLEMP www.projectLEMP;                # Defines which domain names and/or IP addresses this server block should respond for.
+    root /var/www/projectLEMP;                              # Defines the document root where the files served by this website are stored.
 
-    index index.html index.htm index.php;
+    index index.html index.htm index.php;                   # Defines in which order NGINX will prioritize index files for this website
 
-    location / {
+    location / {                                            # The first location block includes a try_files directive
         try_files $uri $uri/ =404;
     }
 
-    location ~ \.php$ {
+    location ~ \.php$ {                                     #  This location block handles the actual PHP processing by pointing Nginx to the fastcgi-php.conf 
         include snippets/fastcgi-php.conf;
         fastcgi_pass unix:/var/run/php/php8.1-fpm.sock;
      }
 
-    location ~ /\.ht {
+    location ~ /\.ht {                                      # The last location block deals with .htaccess files, which Nginx does not process.
         deny all;
     }
 
