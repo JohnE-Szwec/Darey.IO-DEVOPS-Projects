@@ -83,6 +83,7 @@ ___
 ### <div align="center"> Step 3) Installing PHP </div>
 I’ll need to install php-fpm, which stands for “PHP fastCGI process manager”, and tell Nginx to pass PHP requests to this software for processing. 
 In addition I will also need php-mysql, a PHP module that allows PHP to communicate with MySQL-based databases. 
+*PHP-FPM includes numerous features that can prove beneficial for websites receiving traffic in large volumes frequently*
 
 To install these 2 packages at once, I will run:
 
