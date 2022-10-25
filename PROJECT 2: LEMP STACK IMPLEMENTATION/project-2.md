@@ -150,6 +150,13 @@ $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/lemppr
 My Apache virtual host is working as expected. I can access it from my local machines browser using it's DNS name.
 ![VirtualHostWorking](./images/websitefrombrowser.PNG)
 
+ In the next step, i will create a PHP script to test that Nginx is in fact able to handle .php files within my newly configured website.
+___
+### <div align="center"> Step 5) Testing PHP with Nginx </div>
+
+
+
+
 *
 *
 *
@@ -158,8 +165,6 @@ My Apache virtual host is working as expected. I can access it from my local mac
 *
 *
 
-___
-### <div align="center"> Step 5) Enable PHP on my website </div>
 Modify the /etc/apache2/mods-enabled/dir.conf in order to change Apache's default behavior which is to load an html file over a php file <br/>
 and restart apache 
 ```
