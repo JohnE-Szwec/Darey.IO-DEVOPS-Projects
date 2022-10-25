@@ -70,7 +70,7 @@ I then exit the mysql shell with the exit command
 mysql> exit
 ```
 At this point it is recommended that you run a security script that comes pre-installed with MySQL. This script will remove some insecure default settings and lock down access to your database system <br/>
-In most of the configurations presented I provided the most restrictive respnses
+In most of the configurations presented I provided the most restrictive responses
 ![SQL-secure](./images/sqlsecurityscript.PNG)
 
 Now I test to see if i can log into mysql console with the previously configured password utilizing the ALTER USER command
