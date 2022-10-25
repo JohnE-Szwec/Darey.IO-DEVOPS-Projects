@@ -175,6 +175,18 @@ My local browser is successful in retrieving data from my new NGINX webserver ut
 
 ### <div align="center"> Step 6) - Retrieving data from MySQL database with PHP </div>
 
+__In ths step I will create a test SQL database to prove the NGINX website can query data from the database__
+
+In the next steps I created a database , created a new database user and give that new user access to the database
+```
+mysql> CREATE DATABASE `example_database`;
+mysql>  CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
+mysql> GRANT ALL ON example_database.* TO 'example_user'@'%';
+```
+![Create-Base](./images/createsqldbanduser.PNG)
+
+Now i show the new example_user can access the database locally
+![NewUserAccessDB](./images/newuseraccessdb.PNG)
 *
 *
 *
