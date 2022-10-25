@@ -3,7 +3,7 @@
 ___
 ###### * This project has a prerequistie of creating an Ubuntu EC2 instance on my personal AWS account. That instance has a security policy attached which allows me to log into it using SSH on port22 from my local laptop. The creation and setup of this instance is not documented here. 
 
-__Step 1__ – Installing the Nginx Web Server
+### <div align="center"> Step 1) – Installing the Nginx Web Server </div>
 After logging in to the new Ubuntu server from my local Windows terminal, I performed the following commnads to install NGINX
 ```
 sudo apt update               # upate the servers package index
@@ -40,7 +40,7 @@ My new NGINX server is responding to my requests over the Internet made from my 
 ![RespondsOverInternet](./images/respondsoverinternet.PNG)
 
 ___
-### <div align="center"> Step 2) Installing MySQL </div>
+### <div align="center"> Step 2) - Installing MySQL </div>
 
 Now that I have a web server up and running, I need to install a Database Management System (DBMS) to be able to store and manage data for my site in a relational database. MySQL is a popular relational database management system used within PHP environments, so I will use it in my project.
 I use ‘apt’ run from the SSH session to acquire and install this software:
@@ -81,7 +81,7 @@ sudo mysql -p
 ![SQL-login](./images/lognsqlwithpassword.PNG)
 I am able to successfully login to my SQL server with the configured password
 ___
-### <div align="center"> Step 3) Installing PHP </div>
+### <div align="center"> Step 3) - Installing PHP </div>
 I’ll need to install php-fpm, which stands for “PHP fastCGI process manager”, and tell Nginx to pass PHP requests to this software for processing. 
 In addition I will also need php-mysql, a PHP module that allows PHP to communicate with MySQL-based databases. <br/>
 *PHP-FPM includes numerous features that can prove beneficial for websites receiving traffic in large volumes frequently*
@@ -153,7 +153,7 @@ My Apache virtual host is working as expected. I can access it from my local mac
 
  In the next step, i will create a PHP script to test that Nginx is in fact able to handle .php files within my newly configured website.
 ___
-### <div align="center"> Step 5) Testing PHP with Nginx </div>
+### <div align="center"> Step 5) - Testing PHP with Nginx </div>
 
 
 
