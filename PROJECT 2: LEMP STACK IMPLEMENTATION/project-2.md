@@ -77,7 +77,7 @@ At this point it is recommended that you run a security script that comes pre-in
 In most of the configurations presented I provided the most restrictive respnses
 ![SQL-secure](./images/sqlsecurityscript.PNG)
 
-Now I test to see if i can log into mysql console
+Now I test to see if i can log into mysql console with the previously configured password utilizing the ALTER USER command
 ```
 sudo mysql -p
 ```
