@@ -163,7 +163,7 @@ sudo nano /var/www/lempproject/info.php
 ```
 Then entering the following code into that file
 
-'''
+```
 <?php
 phpinfo();
 ```
