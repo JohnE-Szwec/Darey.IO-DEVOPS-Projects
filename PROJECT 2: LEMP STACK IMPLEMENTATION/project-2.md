@@ -107,6 +107,7 @@ sudo mkdir /var/www/lempproject                          ### Ceate Web dcoument 
 sudo chown -R $USER:$USER /var/www/lempproject           ### Assign ownership of new Web docuemnt directory to curent system user
 sudo nano /etc/nginx/sites-available/lempproject.conf    ### Create new configuration for NGINX's sites-availalble
 ```
+![configure-PHP](./images/configurephp.PNG)
 Contents of new configuraion file - lempproject.conf
 ```
 #/etc/nginx/sites-available/projectLEMP
