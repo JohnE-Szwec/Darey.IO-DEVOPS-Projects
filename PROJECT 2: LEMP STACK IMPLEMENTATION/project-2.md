@@ -96,6 +96,14 @@ When the PHP install is completed, I run the following command to confirm my PHP
 php -v
 ```
 ![PHP-version](./images/installphpandversion.PNG)
+
+Activate and test my configuration by linking to the config file from Nginx’s sites-enabled directory:
+This will create a soft link to tell Nginx to use the configuration next time it is reloaded.
+```
+sudo ln -s /etc/nginx/sites-available/lempproject /etc/nginx/sites-enabled/
+sudo nginx -t
+```
+
 ___
 
 
