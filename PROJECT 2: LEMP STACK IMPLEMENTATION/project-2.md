@@ -167,6 +167,7 @@ Then entering the following code into that file
 <?php
 phpinfo();
 ```
+
 This is valid PHP code that will return information about my server.
 
 My local browser is successful in retrieving data from my new NGINX webserver utilizing PHP interpreter
