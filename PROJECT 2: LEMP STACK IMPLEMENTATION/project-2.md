@@ -128,16 +128,6 @@ server {
 
 }
 ```
-![VirtualHost](./images/configurephp.png)
-
-
-Now I use the following set of commands to enable my new virtual host and disable Apaches default website and then reload apache.
-```
-sudo a2ensite lampproject                                ### 
-sudo a2dissite 000-default                               ###
-sudo apache2ctl configtest                               ###  make sure my configuration file doesn’t contain syntax errors
-sudo systemctl reload apache2                            ###
-```
 Activate and test my configuration by linking to the config file from Nginx’s sites-enabled directory:
 This will create a soft link to tell Nginx to use the configuration next time it is reloaded.
 ```
