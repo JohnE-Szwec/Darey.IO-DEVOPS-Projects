@@ -102,7 +102,7 @@ sudo chown -R $USER:$USER /var/www/lempproject           ### Assign ownership of
 sudo nano /etc/nginx/sites-available/lempproject.conf    ### Create new configuration for NGINX's sites-availalble
 ```
 ![configure-PHP](./images/configurephp.PNG)
-Edit the contents of new configuraion file - lempproject.conf
+Edit the contents of the new configuraion file - lempproject.conf
 ```
 #/etc/nginx/sites-available/lempproject
 
