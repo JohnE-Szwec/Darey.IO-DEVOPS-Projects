@@ -99,17 +99,21 @@ php -v
 ___
 
 
-### <div align="center"> Step 4) Creatring a virtual host for my website using Apache </div>
-To test my setup with a PHP script, I will set up a proper Apache Virtual Host to hold my website’s files and folders. Virtual host allows me to have multiple websites located on a single machine and users of my websites will not even notice it. (illistrated below) <br/>
+### <div align="center"> Step 4 — Configuring NGINX to Use PHP Processor </div>
+NGINX uses server blocks to host more than one domain on a single server.
+I will create a new diredctoy on the server to host my new website leaving th default NGINX default domain in tact.
+````
+sudo mkdir /var/www/projectLEMP
+```
 ![VirtualHost](./images/VirtualHost.png)
 
 I will create the directory for my lamproject using ‘mkdir’ command as follows:
 ```
-sudo mkdir /var/www/lampproject                          ### Ceate Web dcoument directory
-sudo chown -R $USER:$USER /var/www/lampproject           ### Assign ownership of new Web docuemnt directory to curent system user
-sudo vi /etc/apache2/sites-available/lampproject.conf    ### Create new configuration for for Apaches sites-availalble
+sudo mkdir /var/www/lempproject                          ### Ceate Web dcoument directory
+sudo chown -R $USER:$USER /var/www/lempproject           ### Assign ownership of new Web docuemnt directory to curent system user
+sudo nano /etc/nginx/sites-available/lempproject.conf    ### Create new configuration for NGINX's sites-availalble
 ```
-Contents of new configuraion file - lampproject.conf
+Contents of new configuraion file - lempproject.conf
 ```
 <VirtualHost *:80>
     ServerName projectlamp
