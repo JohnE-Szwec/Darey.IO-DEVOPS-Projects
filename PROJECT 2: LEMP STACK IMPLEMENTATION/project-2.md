@@ -142,7 +142,8 @@ Disable the default Nginx host that is currently configured to listen on
 sudo unlink /etc/nginx/sites-enabled/default
 ```
 
-Now I will create an index.html file in my /var/www/lempproject folder so that I can test that the virtual host works as expected:
+Now I will create the index.html file in my /var/www/lempproject folder so that I can test that the virtual host works as expected: <br/>
+And populate it with some text to display when the site is accessed. I do this by entering the following command from the servers console.
 
 ```
 sudo echo 'Hello LAMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' <br/> 
