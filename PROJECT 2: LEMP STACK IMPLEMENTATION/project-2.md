@@ -149,7 +149,7 @@ sudo echo 'Hello LAMP from hostname' $(curl -s http://169.254.169.254/latest/met
 $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/lempproject/index.html
 ```
 My Apache virtual host is working as expected. I can access it from my local machines browser using it's DNS name.
-![VirtualHostWorking](./images/websitefrombrowser.PNG)
+![VirtualHostWorking](./images/connecttolempweb.PNG)
 
  In the next step, i will create a PHP script to test that Nginx is in fact able to handle .php files within my newly configured website.
 ___
