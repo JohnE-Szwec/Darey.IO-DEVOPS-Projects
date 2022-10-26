@@ -49,7 +49,7 @@ __This text__
 1. Item 3
 
 <!-- Inline Code Block -->
- `<p>This is a paragraph. 
+ `This is a paragraph. 
  this is my pracice Marke Down file. I have just signed u-p for Darey.IO this mrning </p>`
 
 
