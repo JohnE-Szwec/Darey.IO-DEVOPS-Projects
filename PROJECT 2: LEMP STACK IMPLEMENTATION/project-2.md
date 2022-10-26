@@ -197,8 +197,7 @@ Create php file in my web folder
 nano /var/www/lempproject/todo_list.php
 ```
 Enter the following lines of code in to the new php file.
-```
-<?php
+`<?php
 $user = "example_user";
 $password = "password";
 $database = "example_database";
@@ -214,8 +213,8 @@ try {
 } catch (PDOException $e) {
     print "Error!: " . $e->getMessage() . "<br/>";
     die();
-}
-```
+}`
+
 
 Then i tested that the MySQL database data can be accessed over the Internet via the PHP Interpreter.
 Successfully retrieved the data over teh Internet via a web browser.
