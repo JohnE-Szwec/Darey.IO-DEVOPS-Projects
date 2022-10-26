@@ -50,7 +50,7 @@ __This text__
 
 <!-- Inline Code Block -->
  `This is a paragraph. 
- this is my pracice Marke Down file. I have just signed u-p for Darey.IO this mrning </p>`
+ this is my practice Mark Down file. I have just signed up for Darey.IO this morning`
 
 
 
