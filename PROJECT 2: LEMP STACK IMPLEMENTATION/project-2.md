@@ -3,7 +3,7 @@
 ___
 ###### * This project has a prerequistie of creating an Ubuntu EC2 instance on my personal AWS account. That instance has a security policy attached which allows me to log into it using SSH on port22 from my local laptop. The creation and setup of this instance is not documented here. 
 
-### <div align="center"> Step 1) – Installing the Nginx Web Server </div>
+### <div align="center"> Step 1) – Installing the NGINX Web Server </div>
 After logging in to the new Ubuntu server from my local Windows terminal, I performed the following commnads to install NGINX
 ```
 sudo apt update               # upate the servers package index
