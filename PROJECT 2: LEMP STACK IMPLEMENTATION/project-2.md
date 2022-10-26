@@ -173,6 +173,7 @@ This is valid PHP code that will return information about my server.
 My local browser is successful in retrieving data from my new NGINX webserver utilizing PHP interpreter
 ![PHPWorking](./images/phpsuccess.PNG)
 
+___
 ### <div align="center"> Step 6) - Retrieving data from MySQL database with PHP </div>
 
 __In ths step I will create a test SQL database to prove the NGINX website can query data from the database__
