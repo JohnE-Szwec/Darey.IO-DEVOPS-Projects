@@ -2,7 +2,7 @@
 #### LEMP is an open-source web application stack used to develop web applications. The term LEMP is an acronym that represents L for the Linux Operating system, NGINX (pronounced as engine-x, hence the E in the acronym) web server, M for MySQL database, and P for PHP scripting language.
 ___
 ###### * This project has a prerequistie of creating an Ubuntu EC2 instance on my personal AWS account. That instance has a security policy attached which allows me to log into it using SSH on port22 from my local laptop. The creation and setup of this instance is not documented here. 
-
+___
 ### <div align="center"> Step 1) – Installing the NGINX Web Server </div>
 After logging in to the new Ubuntu server from my local Windows terminal, I performed the following commnads to install NGINX
 ```
