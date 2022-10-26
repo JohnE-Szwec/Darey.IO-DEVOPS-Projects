@@ -192,12 +192,14 @@ While loogged in locally to the example_datbase as the example_user, I have crea
 ![Enterdata](./images/enterdatbasedata-1.PNG)
 
 Then created a PHP script that will connect to MySQL and query for my content. <br/>
-Create php file in my web folder
-``
+Created a php file in my web folder
+```
 nano /var/www/lempproject/todo_list.php
 ```
-Enter the following lines of code in to the new php file.
-`<?php
+Enter the following lines of code in to the new php file. <br/>
+
+```
+<?php
 $user = "example_user";
 $password = "password";
 $database = "example_database";
@@ -213,7 +215,8 @@ try {
 } catch (PDOException $e) {
     print "Error!: " . $e->getMessage() . "<br/>";
     die();
-}`
+}
+```
 
 
 Then i tested that the MySQL database data can be accessed over the Internet via the PHP Interpreter.
