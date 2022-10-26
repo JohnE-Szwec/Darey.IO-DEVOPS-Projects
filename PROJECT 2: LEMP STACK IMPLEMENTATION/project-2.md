@@ -86,12 +86,12 @@ I’ll need to install php-fpm, which stands for “PHP fastCGI process manager�
 In addition I will also need php-mysql, a PHP module that allows PHP to communicate with MySQL-based databases. <br/>
 *PHP-FPM includes numerous features that can prove beneficial for websites receiving traffic in large volumes frequently*
 
-To install these 2 packages at once, I will run: <br/>
-Ad then check the version with php -v
-
+To install these 2 packages at once, I will run the commands: <br/>
 ```
 sudo apt install php-fpm php php-mysql
 ```
+And then check the version with php -v
+
 ![PHP-version](./images/installphpandversion.PNG)
 ___
 ### <div align="center"> Step 4 - Configuring NGINX to Use PHP Processor </div>
