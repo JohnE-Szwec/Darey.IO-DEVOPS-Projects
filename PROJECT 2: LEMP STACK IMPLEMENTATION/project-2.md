@@ -196,7 +196,7 @@ Create php file in my web folder
 ``
 nano /var/www/lempproject/todo_list.php
 ```
-Enter the foloing lines of code in to the new php file.
+Enter the following lines of code in to the new php file.
 ```
 <?php
 $user = "example_user";
