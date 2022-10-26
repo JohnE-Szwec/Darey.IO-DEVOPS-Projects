@@ -189,7 +189,7 @@ Now I test that my new database user 'example_user' can access the database loca
 ![NewUserAccessDB](./images/newuseraccessdb.PNG)
 
 While loogged in locally to the MySQL datasbe as the new example_user I have entered some lines of data into a table named todo_list.
-![Enterdata](./images/enterdatbasedata.PNG)
+![Enterdata](./images/enterdatbasedata-1.PNG)
 
 
 
