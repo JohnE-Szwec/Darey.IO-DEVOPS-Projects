@@ -35,6 +35,7 @@ I can find the public ip address of my web server with the following command fro
 curl -s http://169.254.169.254/latest/meta-data/public-ipv4
 ```
 And use the returned IP address in my URL as follows:
+
 My new NGINX server is responding to my requests over the Internet made from my local browser.
 ![RespondsOverInternet](./images/respondsoverinternet.PNG)
 
