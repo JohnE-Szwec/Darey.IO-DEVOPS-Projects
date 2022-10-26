@@ -188,7 +188,7 @@ mysql> GRANT ALL ON example_database.* TO 'example_user'@'%';
 Now I test that my new database user 'example_user' can access the database locally.
 ![NewUserAccessDB](./images/newuseraccessdb.PNG)
 
-While loogged in locally to the example_datbase as the example_user, I have created a table named todo_list and enterd smoe lines of data.
+While loogged in locally to the example_datbase as the example_user, I have created a table named todo_list and enterd some lines of data.
 ![Enterdata](./images/enterdatbasedata-1.PNG)
 
 
