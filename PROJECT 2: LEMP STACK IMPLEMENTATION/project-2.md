@@ -221,7 +221,7 @@ try {
 ```
 
 
-Then i tested that the MySQL database data can be accessed over the Internet via the PHP Interpreter.
+Then I tested that the MySQL database data can be accessed over the Internet via the PHP Interpreter.
 Successfully retrieved the data over the Internet via a web browser.
 ![Access-DataBase](./images/accesssqlviabrowser.PNG)
 
