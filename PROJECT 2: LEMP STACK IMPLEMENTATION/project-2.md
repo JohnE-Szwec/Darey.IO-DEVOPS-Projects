@@ -191,5 +191,33 @@ Now I test that my new database user 'example_user' can access the database loca
 While loogged in locally to the example_datbase as the example_user, I have created a table named todo_list and enterd some lines of data.
 ![Enterdata](./images/enterdatbasedata-1.PNG)
 
+Then created a PHP script that will connect to MySQL and query for my content. <br/>
+Create php file in my web folder
+``
+nano /var/www/lempproject/todo_list.php
+```
+Enter the foloing lines of code in to the new php file.
+```
+<?php
+$user = "example_user";
+$password = "password";
+$database = "example_database";
+$table = "todo_list";
 
+try {
+  $db = new PDO("mysql:host=localhost;dbname=$database", $user, $password);
+  echo "<h2>TODO</h2><ol>";
+  foreach($db->query("SELECT content FROM $table") as $row) {
+    echo "<li>" . $row['content'] . "</li>";
+  }
+  echo "</ol>";
+} catch (PDOException $e) {
+    print "Error!: " . $e->getMessage() . "<br/>";
+    die();
+}
+```
+
+Then i tested that the MySQL database data can be accessed over the Internet via the PHP Interpreter.
+Successfully retrieved the data over teh Internet via a web browser.
+![Access-DataBase](./images/accesssqlviabrowser.PNG)
 
