@@ -99,8 +99,8 @@ NGINX uses server blocks to host more than one domain on a single server.
 I will create a new directory on the server to host my new website leaving the default NGINX domain directory in tact.
 ```
 sudo mkdir /var/www/lempproject                          ### Ceate Web dcoument directory
-sudo chown -R $USER:$USER /var/www/lempproject           ### Assign ownership of new Web docuemnt directory to curent system user
-sudo nano /etc/nginx/sites-available/lempproject.conf    ### Create new configuration for NGINX's sites-availalble
+sudo chown -R $USER:$USER /var/www/lempproject           ### Assign ownership of the new Web docuemnt directory to the current system user
+sudo nano /etc/nginx/sites-available/lempproject.conf    ### Create new configuration for NGINX's sites-available
 ```
 ![configure-PHP](./images/configurephp.PNG)
 Edit the contents of the new configuraion file - lempproject.conf
