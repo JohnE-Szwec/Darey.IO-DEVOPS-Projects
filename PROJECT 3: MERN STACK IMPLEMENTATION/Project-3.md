@@ -16,8 +16,10 @@ ___
    
  __Run update to fetch the updated metadata on the packages.__
 ![Ubuntu update](./images/updateubuntu-3.PNG)
+
 __Run Upgrade to get packages on the newest versions__
 ![Ubuntu upgrade](./images/ubuntuupgrade-4.PNG)
+
 __First,  I need to get the location of the Node.JS software from the Ubuntu repositories with the following command.__
 ```
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
