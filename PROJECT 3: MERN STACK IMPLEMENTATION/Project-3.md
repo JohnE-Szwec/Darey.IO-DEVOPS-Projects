@@ -23,6 +23,7 @@ __First,  I need to get the location of the Node.JS software from the Ubuntu rep
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 ```
 ![Locate node.js Software](./images/locatenodejs-4.PNG)
+
 __Then install node.js__
 ```
 sudo apt-get install -y nodejs
