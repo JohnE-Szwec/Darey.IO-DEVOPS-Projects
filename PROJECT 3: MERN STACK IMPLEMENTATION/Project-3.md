@@ -30,10 +30,13 @@ sudo apt-get install -y nodejs
 ```
 
 ![AccesWeblocally](./images/installnodejs.PNG)
+
 __Next step is to verify the installation of both NPM and nodejs. Then create a ToDo folder for my project application.__
 ![Verify & Create](./images/verifyandcreate.PNG)
+
 __Run the NPM init command in order to initialize the project and create all the base needed components__
 ![Initialize Node.JS](./images/npminit.PNG)
+
 __Check the contents fo the Package.json fole that was created by the init procedure__
 ![AccesWeblocally](./images/verifynodejs.PNG)
 ___
