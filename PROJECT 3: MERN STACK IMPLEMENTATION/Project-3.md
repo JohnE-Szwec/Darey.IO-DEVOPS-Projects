@@ -28,5 +28,5 @@ ___
 ![AccesWeblocally](./images/installdotenv.PNG)
 ![AccesWeblocally](./images/enterindexjscode.PNG)
 ![AccesWeblocally](./images/expressjsserverrunning.PNG)
-![AccesWeblocally](./images/editinboundsecrules.PNG)
+![AccesWeblocally](./images/editinboundsecurityrules.PNG)
 ![AccesWeblocally](./images/.PNG)
