@@ -21,3 +21,4 @@ __Run Upgrade to get packages on the newest versions__
 ![AccesWeblocally](./images/locatenodejs-4.PNG)
 ![AccesWeblocally](./images/installnodejs.PNG)
 ![AccesWeblocally](./images/verifyandcreate.PNG)
+![AccesWeblocally](./images/verifynodejs.PNG)
