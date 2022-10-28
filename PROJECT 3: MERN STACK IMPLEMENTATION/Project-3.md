@@ -25,5 +25,5 @@ __Run Upgrade to get packages on the newest versions__
 ___
 ### <div align="center"> Step 2) – Install expressjs </div>
 ![AccesWeblocally](./images/installexpressandcreateindex-2.PNG)
-![AccesWeblocally](./images/verifynodejs.PNG)
+![AccesWeblocally](./images/instaldorenv.PNG)
 ![AccesWeblocally](./images/verifynodejs.PNG)
