@@ -26,4 +26,4 @@ ___
 ### <div align="center"> Step 2) – Install expressjs </div>
 ![AccesWeblocally](./images/installexpressandcreateindex-2.PNG)
 ![AccesWeblocally](./images/installdorenv.PNG)
-![AccesWeblocally](./images/verifynodejs.PNG)
+![AccesWeblocally](./images/enterindexjscode.PNG)
