@@ -1,4 +1,4 @@
-## This project requires implementing a web solution based on MERN stack in the AWS Cloud.
+## This project requires implementing a web solution based on a MERN stack in the AWS Cloud.
 ### A __MERN__ Web stack consists of following components: <br/>
 
 __* MongoDB:__ A document-based, No-SQL database used to store application data in a form of documents. <br/>
