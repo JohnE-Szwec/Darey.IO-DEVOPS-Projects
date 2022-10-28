@@ -30,4 +30,8 @@ ___
 ![AccesWeblocally](./images/expressjsserverrunning.PNG)
 ![AccesWeblocally](./images/editinboundsecurityrules.PNG)
 ![AccesWeblocally](./images/connecttoexpress5000.PNG)
-![AccesWeblocally](./images/createroutesfolderandpai.PNG)
+![AccesWeblocally](./images/createroutesfolderandaoi.PNG)
+
+![AccesWeblocally](./images/installmongoose.PNG)
+![AccesWeblocally](./images/createmodelsdirandtodojs.PNG)
+![AccesWeblocally](./images/updateroutesapi.PNG)
