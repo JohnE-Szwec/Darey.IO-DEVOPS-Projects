@@ -18,8 +18,18 @@ ___
 ![AccesWeblocally](./images/updateubuntu-3.PNG)
 __Run Upgrade to get packages on the newest versions__
 ![AccesWeblocally](./images/ubuntuupgrade-4.PNG)
+First,  I need to get the location of the Node.JS software from the Ubuntu repositoies with the following command
+```
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+```
 ![AccesWeblocally](./images/locatenodejs-4.PNG)
+Then install Node.js
+```
+sudo apt-get install -y nodejs
+```
+
 ![AccesWeblocally](./images/installnodejs.PNG)
+Next step is to verify the installation for both NPM and nodejs and create a Tdo folder for my project application
 ![AccesWeblocally](./images/verifyandcreate.PNG)
 ![AccesWeblocally](./images/verifynodejs.PNG)
 ___
