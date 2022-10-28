@@ -18,7 +18,7 @@ ___
 ![AccesWeblocally](./images/updateubuntu-3.PNG)
 __Run Upgrade to get packages on the newest versions__
 ![AccesWeblocally](./images/ubuntuupgrade-4.PNG)
-__First,  I need to get the location of the Node.JS software from the Ubuntu repositoies with the following command.__
+__First,  I need to get the location of the Node.JS software from the Ubuntu repositories with the following command.__
 ```
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 ```
