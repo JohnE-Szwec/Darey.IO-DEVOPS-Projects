@@ -29,7 +29,7 @@ sudo apt-get install -y nodejs
 ```
 
 ![AccesWeblocally](./images/installnodejs.PNG)
-__Next step is to verify the installation for both NPM and nodejs and create a Tdo folder for my project application.__
+__Next step is to verify the installation of both NPM and nodejs. Then create a ToDo folder for my project application.__
 ![AccesWeblocally](./images/verifyandcreate.PNG)
 ![AccesWeblocally](./images/verifynodejs.PNG)
 ___
