@@ -1,7 +1,7 @@
 # <div align="center"> Installing a LAMP Stack in AWS / Project-1</div>
 ### LAMP is an acronym for the operating system, Linux; the web server, Apache; the database server, MySQL; and the programming language, PHP
 ___
-__Overview of the main steps to complete the Stack-1__
+__Overview of the main steps to complete the Stack__
 1. Installing Apache Web Server and updating the firewall
     * Prerequisites
        *  AWS account setup and Provisioning an Ubuntu Server
