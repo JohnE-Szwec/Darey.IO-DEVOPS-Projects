@@ -18,7 +18,7 @@ __Run Upgrade to get packages on the newest versions__ <br/>
 `sudo apt upgrade`
 ![Ubuntu upgrade](./images/ubuntuupgrade-4.PNG)
 
-__Install Node.js on the server and setup the application code__
+## Install Node.js on the server and setup the application code
 * __Locate the Node.js software on the Ubuntu repositories with the following command.__ <br/>
 `curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - `
 ![Locate nodejs Software](./images/locatenodejs-4.PNG)
