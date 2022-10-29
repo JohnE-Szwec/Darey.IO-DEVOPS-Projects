@@ -44,17 +44,21 @@ _The following command  installs both nodejs and npm. NPM is a package manager f
 `cat package.json`
 ![Verify Package Contents](./images/verifynodejs.PNG)
 
-## Install EXPRESSJS
-__*Expressjs is a framework layer built on the top of the Node js that helps manage servers and routes.* <br/>__ 
-Install expressjs and create an index.js file <br/>
-`nom install express` <br/>
+## Install EXPRESSJS <br/>
+* __Install expressjs and create an index.js file__ <br/>
+*Expressjs is a framework layer built on the top of the Node js that helps manage servers and routes.* <br/>
+`npm install express` <br/>
 `touch index.js` <br/>
-Install expressjs and create an index.js file
 ![Install Expressjs & Index](./images/installexpressandcreateindex-2.PNG)
 
+* __Install the dotenv module__ <br/>
+*DotEnv is a lightweight npm package that automatically loads environment variables from a .env file into the process.env object.* <br/>
+![Install DotENV](./images/installdotenv.PNG)
 
-![Install DorENV](./images/installdotenv.PNG)
+* __Edit the index.js file with the following code__ <br/>
+ *index.js is the "entry point" for my new nodejs application* <br/>
 ![AccesWeblocally](./images/enterindexjscode.PNG)
+
 ![AccesWeblocally](./images/expressjsserverrunning.PNG)
 ![AccesWeblocally](./images/editinboundsecurityrules.PNG)
 ![AccesWeblocally](./images/connecttoexpress5000.PNG)
