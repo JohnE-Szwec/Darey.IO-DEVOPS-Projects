@@ -73,9 +73,9 @@ _The following command  installs both nodejs and npm. NPM is a package manager f
 ![Routes foler and AP](./images/createroutesfolderandapi.PNG)
 
 ## CREATING A MODEL <br/>
-*A schema is fundamentally describing the data construct of a document.*
-*A model is a compiled version of the schema. One instance of the model will map to one document in the database.
-Install Mongoose to provide functionality around creating and working with the schemas. <br/>
+*A schema is fundamentally describing the data construct of a document.* <br/>
+*A model is a compiled version of the schema. One instance of the model will map to one document in the database.*
+* __Install Mongoose to provide functionality around creating and working with the schemas.__ <br/>
 ![Install Mnogoose](./images/installmongoose.PNG)
 
 * __Create the models folder, also create and edit the ToDo.js file in that new folder__ <br/>
