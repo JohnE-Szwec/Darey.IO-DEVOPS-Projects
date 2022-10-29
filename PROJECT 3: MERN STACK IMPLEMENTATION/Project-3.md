@@ -57,9 +57,11 @@ _The following command  installs both nodejs and npm. NPM is a package manager f
 
 * __Edit the index.js file with the following code__ <br/>
  *index.js is the "entry point" for my new nodejs application* <br/>
-![AccesWeblocally](./images/enterindexjscode.PNG)
+![Edit Index.js](./images/enterindexjscode.PNG)
 
-![AccesWeblocally](./images/expressjsserverrunning.PNG)
+* __Start the new nodejs applciaiton listening on TCP port 5000__ <br/>
+![Startup Node.JS](./images/expressjsserverrunning.PNG)
+
 ![AccesWeblocally](./images/editinboundsecurityrules.PNG)
 ![AccesWeblocally](./images/connecttoexpress5000.PNG)
 ![AccesWeblocally](./images/createroutesfolderandapi.PNG)
