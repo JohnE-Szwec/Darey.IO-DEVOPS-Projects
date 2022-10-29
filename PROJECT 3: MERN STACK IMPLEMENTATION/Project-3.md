@@ -81,4 +81,6 @@ _The following command  installs both nodejs and npm. NPM is a package manager f
 * __Create the models folder, also create and edit the ToDo.js file in that new folder__ <br/>
 ![Ceate Models folder](./images/createmodelsdirandtodojs.PNG)
 
+* __Edit the api.js file in the routes folder as follows__ <br/>
+*This code will be used to define the action taken when a sepcific endpoint is called.*
 ![AccesWeblocally](./images/updateroutesapi.PNG)
