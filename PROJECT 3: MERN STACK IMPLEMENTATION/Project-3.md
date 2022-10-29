@@ -8,7 +8,7 @@ __* Node.js:__ A JavaScript runtime environment. It is used to run JavaScript on
 
 ###### * This project has a prerequistie of creating an Ubuntu EC2 instance on my personal AWS account. That instance has a security policy attached which allows me to log into it using SSH on port22 from my local laptop. The creation and setup of this instance is not documented here. 
 
-## Step 1) – BACKEND CONFIGURATION
+## BACKEND CONFIGURATION
 
 ### Install the latest versions of all packages on the Ubuntu server.
    
@@ -44,7 +44,7 @@ _The following command  installs both nodejs and npm. NPM is a package manager f
 `cat package.json`
 ![Verify Package Contents](./images/verifynodejs.PNG)
 
-## Install EXPRESSJS <br/>
+## INSTALL EXPRESSJS <br/>
 * __Install expressjs and create an index.js file__ <br/>
 *Expressjs is a framework layer built on the top of the Node js that helps manage servers and routes.* <br/>
 `npm install express` <br/>
@@ -62,10 +62,23 @@ _The following command  installs both nodejs and npm. NPM is a package manager f
 * __Start the new nodejs applciaiton listening on TCP port 5000__ <br/>
 ![Startup Node.JS](./images/expressjsserverrunning.PNG)
 
-![AccesWeblocally](./images/editinboundsecurityrules.PNG)
-![AccesWeblocally](./images/connecttoexpress5000.PNG)
-![AccesWeblocally](./images/createroutesfolderandapi.PNG)
+* __Allow port 5000 on the security rules attached to the server instance which hosts my new application__ <br/>
+![SecurityGroup Port5000](./images/editinboundsecurityrules.PNG)
 
-![AccesWeblocally](./images/installmongoose.PNG)
-![AccesWeblocally](./images/createmodelsdirandtodojs.PNG)
+* __Access the new application from a local web browser on port 5000__ <br/>
+![Access app from Browser](./images/connecttoexpress5000.PNG)
+
+* __Create the routes folder, also create and edit the api.js file in that new folder__ <br/>
+*A route is a section of Express code that associates an HTTP verb (GET, POST, PUT, DELETE, etc.), a URL path/pattern, and a function that is called to handle that pattern.*
+![Routes foler and AP](./images/createroutesfolderandapi.PNG)
+
+## CREATING A MODEL <br/>
+*A schema is fundamentally describing the data construct of a document.*
+*A model is a compiled version of the schema. One instance of the model will map to one document in the database.
+Install Mongoose to provide functionality around creating and working with the schemas. <br/>
+![Install Mnogoose](./images/installmongoose.PNG)
+
+* __Create the models folder, also create and edit the ToDo.js file in that new folder__ <br/>
+![Ceate Models folder](./images/createmodelsdirandtodojs.PNG)
+
 ![AccesWeblocally](./images/updateroutesapi.PNG)
