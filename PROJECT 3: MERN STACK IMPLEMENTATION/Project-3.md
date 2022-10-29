@@ -9,38 +9,37 @@ __* Node.js:__ A JavaScript runtime environment. It is used to run JavaScript on
 ###### * This project has a prerequistie of creating an Ubuntu EC2 instance on my personal AWS account. That instance has a security policy attached which allows me to log into it using SSH on port22 from my local laptop. The creation and setup of this instance is not documented here. 
 ___
 ### <div align="center"> Step 1) – BACKEND CONFIGURATION </div>
-* Step 1 (sub steps)
-  * Upgrade Ubuntu
-  * Install NPM and NodeJS
-  * Create a directory and initialize our project application in it.
    
- __Run update to fetch the updated metadata on the packages.__
+ __Run update to fetch the updated metadata on the packages.__ <br/>
+ `sudo apt update`
 ![Ubuntu update](./images/updateubuntu-3.PNG)
 
-__Run Upgrade to get packages on the newest versions__
+__Run Upgrade to get packages on the newest versions__ <br/>
+`sudo apt upgrade`
 ![Ubuntu upgrade](./images/ubuntuupgrade-4.PNG)
 
-### Install Node.js on the server
-* __First,  I need to get the location of the Node.JS software from the Ubuntu repositories with the following command.__
-```
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-```
-![Locate node.js Software](./images/locatenodejs-4.PNG)
+__Install Node.js on the server__
+* __Locate the Node.js software on the Ubuntu repositories with the following command.__ <br/>
+`curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - `
+![Locate nodejs Software](./images/locatenodejs-4.PNG)
 
-* __Then install node.js__
-```
-sudo apt-get install -y nodejs
-```
-
+*__Application code setup (install node.js)__ <br/>
+_The following command  installs both nodejs and npm. NPM is a package manager for Node like apt for Ubuntu_ <br/>
+`sudo apt-get install -y nodejs`
 ![AccesWeblocally](./images/installnodejs.PNG)
 
-* __Next step is to verify the installation of both NPM and nodejs. Then create a ToDo folder for my project application.__
+*__Verify the installation of both NPM and nodejs. Then create a ToDo folder for my project application.__
+```
+node -v
+npm -v
+```
+
 ![Verify & Create](./images/verifyandcreate.PNG)
 
-* __Run the NPM init command in order to initialize the project and create all the base needed components__
+*__Run the NPM init command in order to initialize the project and create all the base needed components__
 ![Initialize Node.JS](./images/npminit.PNG)
 
-* __Check the contents of the Package.json file that was created by the init procedure__
+*__Check the contents of the Package.json file that was created by the init procedure__
 ![AccesWeblocally](./images/verifynodejs.PNG)
 ___
 ### <div align="center"> Step 2) – Install expressjs </div>
