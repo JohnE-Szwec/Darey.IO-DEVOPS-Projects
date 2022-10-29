@@ -26,7 +26,7 @@ __Run Upgrade to get packages on the newest versions__ <br/>
 * __Application code setup (install node.js)__ <br/>
 _The following command  installs both nodejs and npm. NPM is a package manager for Node like apt for Ubuntu_ <br/>
 `sudo apt-get install -y nodejs`
-![AccesWeblocally](./images/installnodejs.PNG)
+![Install Nodejs](./images/installnodejs.PNG)
 
 * __Verify the installation of both NPM and nodejs. Then create a ToDo folder for my project application.__ <br/>
 `node -v` <br/>
@@ -40,9 +40,9 @@ _The following command  installs both nodejs and npm. NPM is a package manager f
 
 * __Verify the existence of the Package.json file that was created by the init procedure__ <br/>
 `cat package.json`
-![AccesWeblocally](./images/verifynodejs.PNG)
+![Verify Package Contents](./images/verifynodejs.PNG)
 ___
-### <div align="center"> Step 2) – Install expressjs </div>
+## Install Node.js on the server and setup the application code
 ![AccesWeblocally](./images/installexpressandcreateindex-2.PNG)
 ![AccesWeblocally](./images/installdotenv.PNG)
 ![AccesWeblocally](./images/enterindexjscode.PNG)
