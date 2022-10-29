@@ -18,28 +18,28 @@ __Run Upgrade to get packages on the newest versions__ <br/>
 `sudo apt upgrade`
 ![Ubuntu upgrade](./images/ubuntuupgrade-4.PNG)
 
-__Install Node.js on the server__
+__Install Node.js on the server and setup the application code__
 * __Locate the Node.js software on the Ubuntu repositories with the following command.__ <br/>
 `curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - `
 ![Locate nodejs Software](./images/locatenodejs-4.PNG)
 
-*__Application code setup (install node.js)__ <br/>
+* __Application code setup (install node.js)__ <br/>
 _The following command  installs both nodejs and npm. NPM is a package manager for Node like apt for Ubuntu_ <br/>
 `sudo apt-get install -y nodejs`
 ![AccesWeblocally](./images/installnodejs.PNG)
 
-*__Verify the installation of both NPM and nodejs. Then create a ToDo folder for my project application.__
-```
-node -v
-npm -v
-```
-
+* __Verify the installation of both NPM and nodejs. Then create a ToDo folder for my project application.__ <br/>
+`node -v` <br/>
+`npm -v` <br/>
+`mkdir ToDo` <br/>
 ![Verify & Create](./images/verifyandcreate.PNG)
 
-*__Run the NPM init command in order to initialize the project and create all the base needed components__
+* __Initialize the project and create all the base needed components__ <br/>
+`npm init`
 ![Initialize Node.JS](./images/npminit.PNG)
 
-*__Check the contents of the Package.json file that was created by the init procedure__
+* __Verify the existence of the Package.json file that was created by the init procedure__ <br/>
+`cat package.json`
 ![AccesWeblocally](./images/verifynodejs.PNG)
 ___
 ### <div align="center"> Step 2) – Install expressjs </div>
