@@ -7,18 +7,20 @@ __* ReactJS:__ A frontend framework developed by Facebook. It is based on JavaSc
 __* Node.js:__ A JavaScript runtime environment. It is used to run JavaScript on a machine rather than in a browser. <br/>
 
 ###### * This project has a prerequistie of creating an Ubuntu EC2 instance on my personal AWS account. That instance has a security policy attached which allows me to log into it using SSH on port22 from my local laptop. The creation and setup of this instance is not documented here. 
-___
-### <div align="center"> Step 1) – BACKEND CONFIGURATION </div>
+
+## Step 1) – BACKEND CONFIGURATION
+
+### Install the latest versions of all packages on the Ubuntu server.
    
- __Run update to fetch the updated metadata on the packages.__ <br/>
+ * __Run update to fetch the updated metadata on the packages.__ <br/>
  `sudo apt update`
 ![Ubuntu update](./images/updateubuntu-3.PNG)
 
-__Run Upgrade to get packages on the newest versions__ <br/>
+* __Run Upgrade to get packages on the newest versions__ <br/>
 `sudo apt upgrade`
 ![Ubuntu upgrade](./images/ubuntuupgrade-4.PNG)
 
-## Install Node.js on the server and setup the application code
+### Install Node.js on the server and setup the application code
 * __Locate the Node.js software on the Ubuntu repositories with the following command.__ <br/>
 `curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - `
 ![Locate nodejs Software](./images/locatenodejs-4.PNG)
@@ -41,10 +43,17 @@ _The following command  installs both nodejs and npm. NPM is a package manager f
 * __Verify the existence of the Package.json file that was created by the init procedure__ <br/>
 `cat package.json`
 ![Verify Package Contents](./images/verifynodejs.PNG)
-___
-## Install Node.js on the server and setup the application code
-![AccesWeblocally](./images/installexpressandcreateindex-2.PNG)
-![AccesWeblocally](./images/installdotenv.PNG)
+
+## Install EXPRESSJS
+__*Expressjs is a framework layer built on the top of the Node js that helps manage servers and routes.* <br/>__ 
+Install expressjs and create an index.js file <br/>
+`nom install express` <br/>
+`touch index.js` <br/>
+Install expressjs and create an index.js file
+![Install Expressjs & Index](./images/installexpressandcreateindex-2.PNG)
+
+
+![Install DorENV](./images/installdotenv.PNG)
 ![AccesWeblocally](./images/enterindexjscode.PNG)
 ![AccesWeblocally](./images/expressjsserverrunning.PNG)
 ![AccesWeblocally](./images/editinboundsecurityrules.PNG)
