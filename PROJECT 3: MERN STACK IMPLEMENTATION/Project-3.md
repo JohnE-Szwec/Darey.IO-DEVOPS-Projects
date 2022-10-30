@@ -83,4 +83,4 @@ _The following command  installs both nodejs and npm. NPM is a package manager f
 
 * __Edit the api.js file in the routes folder as follows__ <br/>
 *This code will be used to define the action taken when a sepcific endpoint is called.*
-![AccesWeblocally](./images/updateroutesapi-1.PNG)
+![Update routes API](./images/updateroutesapi-1.PNG)
