@@ -28,7 +28,7 @@ __* Node.js:__ A JavaScript runtime environment. It is used to run JavaScript on
 * __Application code setup (install node.js)__ <br/>
 _The following command  installs both nodejs and npm. NPM is a package manager for Node like apt for Ubuntu_ <br/>
 `sudo apt-get install -y nodejs`
-![Install Nodejs](./images/installnodejs40.PNG)
+![Install Nodejs](./images/installnodejs.PNG)
 
 * __Verify the installation of both NPM and nodejs. Then create a ToDo folder for my project application.__ <br/>
 `node -v` <br/>
