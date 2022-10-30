@@ -18,7 +18,7 @@ __* Node.js:__ A JavaScript runtime environment. It is used to run JavaScript on
 
 * __Run Upgrade to get packages on the newest versions__ <br/>
 `sudo apt upgrade`
-![Ubuntu upgrade](./images/ubuntuupgrade-40.PNG)
+![Ubuntu upgrade](./images/ubuntuupgrade-4.PNG)
 
 ### Install Node.js on the server and setup the application code
 * __Locate the Node.js software on the Ubuntu repositories with the following command.__ <br/>
