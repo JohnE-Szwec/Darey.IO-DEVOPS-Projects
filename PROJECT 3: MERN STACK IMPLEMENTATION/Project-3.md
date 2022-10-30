@@ -84,3 +84,7 @@ _The following command  installs both nodejs and npm. NPM is a package manager f
 * __Edit the api.js file in the routes folder as follows__ <br/>
 *This code will be used to define the action taken when a sepcific endpoint is called.*
 ![Update routes API](./images/updateroutesapi-1.PNG)
+
+## MONGODB DATABASE <br/>
+*For my project I will need a database where I will store my data. For this I will make use of mLab. mLab provides MongoDB database as a service solution (DBaaS).*
+
