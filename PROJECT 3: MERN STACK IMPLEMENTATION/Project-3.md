@@ -108,7 +108,7 @@ Copy the connection string and save it in a notepad for later.
 ![Connection String](./images/get-mongo-connection-string-1.PNG)
 ![Connection String](./images/get-mongo-connection-string-2.PNG)
 
-* __The connection string will be entered into a .env file__ <br/>
+* __The connection string will be entered into a newly created .env file__ <br/>
 Copy the connection string into a newly created .env file located in the Todo folder on the AWS EC2 instance. <br/>
 *The index.js file will reference this .env file in order to connect to the mlab MongoDB* <br/>
 I need to change the username: password and database name before saving the .env file to the ones actually created
