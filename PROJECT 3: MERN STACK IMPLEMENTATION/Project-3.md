@@ -93,12 +93,34 @@ For this I will make use of mLab. mLab provides MongoDB database as a service so
 * Create a MongoDB cluster. <br/>
 *In the context of MongoDB, “cluster” is the word usually used for either a replica set or a sharded cluster. <br/>
 A MongoDB Atlas Cluster is a NoSQL Database-as-a-Service offering in the public cloud.*
-![MongoDB clusterI](./images/mlab-cluster.PNG)
+![MongoDB cluster](./images/mlab-cluster.PNG)
 
 
 * Create a MongoDB database and collection. <br/>
 *A collection is a grouping of MongoDB documents. Documents within a collection can have different fields. <br/>
 A collection is the equivalent of a table in a relational database system. A collection exists within a single database*
-![MongoDB CollectionI](./images/mongodb-and-collection.PNG)
+![MongoDB Collection](./images/mongodb-and-collection.PNG)
 
+* Retrieve the  connection string from cluster in order to access the mlab DB from the application.
+*The conection string is provided by mlab.* <br/>
+* __Click on connect from the cluster and choose connect your application__ <br/>
+Copy the conection string and save it in a notepad for later
+![Connection String-1](./images/get-mongo-connection-string.PNG)
+
+* __The connection string will be entered into a .env file__ <br/>
+Copy the connection string into a newly created .env file located in the Todo folder on the AWS EC2 instance.
+*The index.js file will reference this .env file in order to connect to the mlab MongoDB <br/>
+I need to change the username: password and database name before saving the .env file to the ones actually created*
+
+* __Edit the index.js file to reflect the use of the .env file so that Node.js can connect to the database__ <br/>
+![Edit Index.js](./images/edit-indexjs-file.PNG)
+
+* __Now that my new MongoDB is created and defined I can start the application__ <br/>
+`
+node index.js
+`
+![Start Application](./images/start-the-application.PNG)
+
+### Before creating the frontend of the application i need to test the backend code. <br/>
+### In order to do this I will use Postman to test my API.
 
