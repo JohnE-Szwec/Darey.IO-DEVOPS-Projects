@@ -90,14 +90,15 @@ _The following command  installs both nodejs and npm. NPM is a package manager f
 For this I will make use of mLab. mLab provides MongoDB database as a service solution (DBaaS).*
 
 ### The creation steps of the MongoDB are as follows. <br/>
-* Create a MongoDB cluster
+* Create a MongoDB cluster. <br/>
 *In the context of MongoDB, “cluster” is the word usually used for either a replica set or a sharded cluster. <br/>
-*A MongoDB Atlas Cluster is a NoSQL Database-as-a-Service offering in the public cloud.*
+A MongoDB Atlas Cluster is a NoSQL Database-as-a-Service offering in the public cloud.*
 ![MongoDB clusterI](./images/mlab-cluster.PNG)
 
-* Create a MongoDB database and collection.* <br/>
+
+* Create a MongoDB database and collection. <br/>
 *A collection is a grouping of MongoDB documents. Documents within a collection can have different fields. <br/>
-*A collection is the equivalent of a table in a relational database system. A collection exists within a single database*
+A collection is the equivalent of a table in a relational database system. A collection exists within a single database*
 ![MongoDB CollectionI](./images/mongodb-and-collection.PNG)
 
 
