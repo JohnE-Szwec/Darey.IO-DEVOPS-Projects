@@ -122,7 +122,7 @@ node index.js
 `
 ![Start Application](./images/start-the-application.PNG)
 
-* __Before creating the frontend of the application i need to test the backend code.__ <br/>
+### Utlilizing POSTMAN in order to test the backend code of the application. <br/>
 *In order to do this I will use Postman to test my API.
 Postman is a tool used to dissect RESTful APIs made by others or test ones you have made yourself*
 
