@@ -123,5 +123,5 @@ node index.js
 ![Start Application](./images/start-the-application.PNG)
 
 ### Before creating the frontend of the application i need to test the backend code. <br/>
-### In order to do this I will use Postman to test my API.
+In order to do this I will use Postman to test my API.
 
