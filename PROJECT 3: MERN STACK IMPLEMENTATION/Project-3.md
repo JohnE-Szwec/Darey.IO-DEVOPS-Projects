@@ -103,9 +103,11 @@ A collection is the equivalent of a table in a relational database system. A col
 
 * Retrieve the  connection string from cluster in order to access the mlab DB from the application.
 *The conection string is provided by mlab.* <br/>
+
 * __Click on connect from the cluster and choose connect your application__ <br/>
 Copy the conection string and save it in a notepad for later
-![Connection String-1](./images/get-mongo-connection-string.PNG)
+![Connection String](./images/get-mongo-connection-string-1.PNG)
+![Connection String](./images/get-mongo-connection-string-2.PNG)
 
 * __The connection string will be entered into a .env file__ <br/>
 Copy the connection string into a newly created .env file located in the Todo folder on the AWS EC2 instance.
