@@ -85,6 +85,18 @@ _The following command  installs both nodejs and npm. NPM is a package manager f
 *This code will be used to define the action taken when a sepcific endpoint is called.*
 ![Update routes API](./images/updateroutesapi-1.PNG)
 
-## MONGODB DATABASE <br/>
-*For my project I will need a database where I will store my data. For this I will make use of mLab. mLab provides MongoDB database as a service solution (DBaaS).*
+## MONGODB DATABASE CERATION <br/>
+*For my project I will need a mongodb database where I will store my data. <br/>
+For this I will make use of mLab. mLab provides MongoDB database as a service solution (DBaaS).*
+
+The creation steps of the MongoDB are as follows
+In the context of MongoDB, “cluster” is the word usually used for either a replica set or a sharded cluster.
+A MongoDB Atlas Cluster is a NoSQL Database-as-a-Service offering in the public cloud.
+
+![MongoDB clusterI](./images/mlab-cluster.PNG)
+
+A collection is a grouping of MongoDB documents. Documents within a collection can have different fields. <br/>
+A collection is the equivalent of a table in a relational database system. A collection exists within a single database
+![MongoDB CollectionI](./images/mongodb-and-collection.PNG)
+
 
