@@ -95,7 +95,7 @@ For this I will make use of mLab. mLab provides MongoDB database as a service so
 *A MongoDB Atlas Cluster is a NoSQL Database-as-a-Service offering in the public cloud.*
 ![MongoDB clusterI](./images/mlab-cluster.PNG)
 
-* Create a MongoDB database and collection
+* Create a MongoDB database and collection. <br/>
 *A collection is a grouping of MongoDB documents. Documents within a collection can have different fields. <br/>
 *A collection is the equivalent of a table in a relational database system. A collection exists within a single database*
 ![MongoDB CollectionI](./images/mongodb-and-collection.PNG)
