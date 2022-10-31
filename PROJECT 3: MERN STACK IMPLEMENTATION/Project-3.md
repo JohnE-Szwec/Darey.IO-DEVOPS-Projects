@@ -111,7 +111,7 @@ Copy the connection string and save it in a notepad for later.
 * __The connection string will be entered into a newly created .env file__ <br/>
 Copy the connection string into a newly created .env file located in the Todo folder on the AWS EC2 instance. <br/>
 *The index.js file will reference this .env file in order to connect to the mlab MongoDB* <br/>
-I need to change the username: password and database name before saving the .env file to the ones actually created
+I need to change the username, password, and database values to the ones actually created before saving the .env file.
 
 * __Edit the index.js file to reflect the use of the .env file so that Node.js can connect to the database__ <br/>
 ![Edit Index.js](./images/edit-indexjs-file.PNG)
