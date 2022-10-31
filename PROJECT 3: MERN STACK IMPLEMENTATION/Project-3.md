@@ -122,6 +122,24 @@ node index.js
 `
 ![Start Application](./images/start-the-application.PNG)
 
-### Before creating the frontend of the application i need to test the backend code. <br/>
-In order to do this I will use Postman to test my API.
+* __Before creating the frontend of the application i need to test the backend code.__ <br/>
+*In order to do this I will use Postman to test my API.
+Postman is a tool used to dissect RESTful APIs made by others or test ones you have made yourself*
+
+* __In the next steps I will POST, GET, and DELETE data in my new MongoDB database utilizing Postman__ <br/>
+I make a couple of individual posts to the MongoDB.
+![Make a POST](./images/postman-post-2.PNG)
+
+Use the GET function from Postman to test if I can retrieve the data just posted.
+![GET Posted-Data](./images/postman-get-2.PNG)
+
+The next step is to check the MongoDB to prove the records now exist
+![Check MongoDB Data](./images/mongodb-post-successful-2.PNG)
+
+Now DELETE one of the records.
+![Delete One Record](./images/postman-delete.PNG)
+
+Check the MongoDB once again to see if the record was actually deleted.
+*Checking the datbase only one record now exists*
+![Mongo Check Delete Record](./images/postman-delete.PNG)
 
