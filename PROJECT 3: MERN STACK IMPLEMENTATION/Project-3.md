@@ -101,10 +101,9 @@ A MongoDB Atlas Cluster is a NoSQL Database-as-a-Service offering in the public 
 A collection is the equivalent of a table in a relational database system. A collection exists within a single database*
 ![MongoDB Collection](./images/mongodb-and-collection.PNG)
 
-* Retrieve the  connection string from cluster in order to access the mlab DB from the application.
+* __Retrieve the  connection string from cluster in order to access the mlab DB from the application.__
 *The conection string is provided by mlab.* <br/>
-
-* __Click on connect from the cluster and choose connect your application__ <br/>
+Click on connect from the cluster and choose connect your application__ <br/>
 Copy the conection string and save it in a notepad for later
 ![Connection String](./images/get-mongo-connection-string-1.PNG)
 ![Connection String](./images/get-mongo-connection-string-2.PNG)
