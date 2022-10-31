@@ -140,5 +140,5 @@ I make a couple of individual posts to the MongoDB. (only one post is illustrate
 
 * __Check the MongoDB once again to see if the record was actually deleted.__
 *Checking the datbase only one record now exists*
-![Mongo Check Delete Record](./images/mongodb-delete-successful.PNG)
+![Mongo Check Delete Record](./images/mongo-delete-successful.PNG)
 
