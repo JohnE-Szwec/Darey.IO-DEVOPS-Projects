@@ -130,16 +130,16 @@ Postman is a tool used to dissect RESTful APIs made by others or test ones you h
 I make a couple of individual posts to the MongoDB. (only one post is illustrated in this document.)
 ![Make a POST](./images/postman-post-2.PNG)
 
-Use the GET function from Postman to test if I can retrieve the data just posted.
+* __Use the GET function from Postman to test if I can retrieve the data just posted.__
 ![GET Posted-Data](./images/postman-get-2.PNG)
 
-The next step is to check the MongoDB to prove the records now exist
+* __The next step is to check the MongoDB to prove the records now exist.__
 ![Check MongoDB Data](./images/mongodb-post-successful-2.PNG)
 
-Now DELETE one of the records.
+* __Now DELETE one of the records.__
 ![Delete One Record](./images/postman-delete.PNG)
 
-Check the MongoDB once again to see if the record was actually deleted.
+* __Check the MongoDB once again to see if the record was actually deleted.__
 *Checking the datbase only one record now exists*
 ![Mongo Check Delete Record](./images/postman-delete.PNG)
 
