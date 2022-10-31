@@ -123,8 +123,7 @@ node index.js
 ![Start Application](./images/start-the-application.PNG)
 
 ### Utlilizing POSTMAN in order to test the backend code of the application. <br/>
-*In order to do this I will use Postman to test my API.
-Postman is a tool used to dissect RESTful APIs made by others or test ones you have made yourself*
+*Postman is a tool used to dissect RESTful APIs made by others or test ones you have made yourself*
 
 * __In the next steps I will POST, GET, and DELETE data in my new MongoDB database utilizing Postman__ <br/>
 I make a couple of individual posts to the MongoDB. (only one post is illustrated in this document.)
