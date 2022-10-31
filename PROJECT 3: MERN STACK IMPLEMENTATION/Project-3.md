@@ -127,7 +127,7 @@ node index.js
 Postman is a tool used to dissect RESTful APIs made by others or test ones you have made yourself*
 
 * __In the next steps I will POST, GET, and DELETE data in my new MongoDB database utilizing Postman__ <br/>
-I make a couple of individual posts to the MongoDB.
+I make a couple of individual posts to the MongoDB. (only one post is illustrated in this document.)
 ![Make a POST](./images/postman-post-2.PNG)
 
 Use the GET function from Postman to test if I can retrieve the data just posted.
