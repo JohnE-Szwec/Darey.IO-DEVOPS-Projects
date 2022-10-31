@@ -89,7 +89,7 @@ _The following command  installs both nodejs and npm. NPM is a package manager f
 *For my project I will need a mongodb database where I will store my data. <br/>
 For this I will make use of mLab. mLab provides MongoDB database as a service solution (DBaaS).*
 
-The creation steps of the MongoDB are as follows. <br/>
+### The creation steps of the MongoDB are as follows. <br/>
 * Create a MongoDB Cluster
 *In the context of MongoDB, “cluster” is the word usually used for either a replica set or a sharded cluster. <br/>
 *A MongoDB Atlas Cluster is a NoSQL Database-as-a-Service offering in the public cloud.
