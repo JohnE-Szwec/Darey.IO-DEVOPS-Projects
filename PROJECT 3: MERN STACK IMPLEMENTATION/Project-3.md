@@ -85,7 +85,7 @@ _The following command  installs both nodejs and npm. NPM is a package manager f
 *This code will be used to define the action taken when a sepcific endpoint is called.*
 ![Update routes API](./images/updateroutesapi-1.PNG)
 
-## MONGODB DATABASE CREATION <br/>
+## MONGODB DATABASE CREATION & TESTING FUNCTION with POSTMAN <br/>
 *For my project I will need a mongodb database where I will store my data. <br/>
 For this I will make use of mLab. mLab provides MongoDB database as a service solution (DBaaS).*
 
