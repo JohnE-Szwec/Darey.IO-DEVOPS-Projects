@@ -156,6 +156,6 @@ Run the following command to install concurrently.
 ![Install Concurrency](./images/install-concurrency.PNG)
 
 Run the following command to install nodemon.
-*nodemon is used to rnb and monitor the sever.* <br/>
+*nodemon is used to run and monitor the sever.* <br/>
 ![Install Nodemon](./images/install-nodemony.PNG)
 
