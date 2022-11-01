@@ -144,3 +144,18 @@ I make a couple of individual posts to the MongoDB. (only one post is illustrate
 
 ## FRONTEND CREATION <br/>
 
+* __Create the React application.__ <br/>
+*Cerate React app sets up an assortment of basic web app elements; commands to test, build, and serve your app.*
+`npx create-react-app client`
+![Create React App](./images/create-react-app.PNG)
+
+* __Install React dependencies - Concurrently and nodemon__ <br/>
+Run the following command to install concurrently.
+*concurrently is used to run more than one command simultaneously from the same terminal window.*
+`npm install concurrently --save-dev`
+![Install Concurrency](./images/install-concurrency.PNG)
+
+Run the following command to install nodemon.
+*nodemon is used to rnb and monitor the sever.*
+![Install Nodemon](./images/install-nodemony.PNG)
+
