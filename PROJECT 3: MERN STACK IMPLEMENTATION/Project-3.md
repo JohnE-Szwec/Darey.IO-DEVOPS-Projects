@@ -155,7 +155,7 @@ Run the following command to install concurrently.
 `npm install concurrently --save-dev` <br/>
 ![Install Concurrently](./images/install-concurrently.PNG)
 
-* __Run the following command to install nodemon.__
+* __Run the following command to install nodemon.__ <br/>
 *nodemon is used to run and monitor the sever.* <br/>
 ![Install Nodemon](./images/install-nodemon.PNG)
 
