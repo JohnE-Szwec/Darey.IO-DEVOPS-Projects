@@ -159,6 +159,5 @@ Run the following command to install concurrently.
 *nodemon is used to run and monitor the sever.* <br/>
 ![Install Nodemon](./images/install-nodemon.PNG)
 
-* __Cofigure teh package.json file located in the main applcation folder to piont to the newly installed react components .__ <br/>
-*nodemon is used to run and monitor the sever.* <br/>
-![Install Nodemon](./images/install-nodemon.PNG)
+* __Configure the package.json file located in the main application folder to piont to the newly installed react components .__ <br/>
+![config Package JSON](./images/edit-package-json.PNG)
