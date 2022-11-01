@@ -151,11 +151,11 @@ I make a couple of individual posts to the MongoDB. (only one post is illustrate
 
 * __Install React dependencies - Concurrently and nodemon__ <br/>
 Run the following command to install concurrently.
-*concurrently is used to run more than one command simultaneously from the same terminal window.*
+*concurrently is used to run more than one command simultaneously from the same terminal window.* <br/>
 `npm install concurrently --save-dev`
 ![Install Concurrency](./images/install-concurrency.PNG)
 
 Run the following command to install nodemon.
-*nodemon is used to rnb and monitor the sever.*
+*nodemon is used to rnb and monitor the sever.* <br/>
 ![Install Nodemon](./images/install-nodemony.PNG)
 
