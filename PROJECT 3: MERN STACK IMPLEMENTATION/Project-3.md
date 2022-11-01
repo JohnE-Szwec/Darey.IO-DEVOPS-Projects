@@ -153,9 +153,9 @@ I make a couple of individual posts to the MongoDB. (only one post is illustrate
 Run the following command to install concurrently.
 *concurrently is used to run more than one command simultaneously from the same terminal window.* <br/>
 `npm install concurrently --save-dev` <br/>
-![Install Concurrency](./images/install-concurrency.PNG)
+![Install Concurrency](./images/install-concurretly.PNG)
 
 Run the following command to install nodemon.
 *nodemon is used to run and monitor the sever.* <br/>
-![Install Nodemon](./images/install-nodemony.PNG)
+![Install Nodemon](./images/install-nodemon.PNG)
 
