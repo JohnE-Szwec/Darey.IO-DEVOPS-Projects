@@ -142,3 +142,5 @@ I make a couple of individual posts to the MongoDB. (only one post is illustrate
 *Checking the datbase I see only one record now exists*
 ![Mongo Check Delete Record](./images/mongo-delete-successful.PNG)
 
+## FRONTEND CREATION <br/>
+
