@@ -145,9 +145,9 @@ I make a couple of individual posts to the MongoDB. (only one post is illustrate
 ## FRONTEND CREATION <br/>
 
 * __Create the React application.__ <br/>
-*Cerate React app sets up an assortment of basic web app elements; commands to test, build, and serve your app.*
+*Cerate React app sets up an assortment of basic web app elements; commands to test, build, and serve your app.* <br/>
 `npx create-react-app client` <br/>
-![Create React App](./images/create-react-app.PNG)
+![Create React App](./images/create-react-app-2.PNG)
 
 * __Install React dependencies - Concurrently and nodemon__ <br/>
 Run the following command to install concurrently.
