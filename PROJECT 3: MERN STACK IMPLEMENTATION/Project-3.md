@@ -231,4 +231,6 @@ return (
 
 export default Input
 ```
-* __From the clients folder I install axios.__ <br/>
+* __From the clients folder I install Axios.__ <br/>
+*Axios is an HTTP client library based on promises. It makes sending asynchronous HTTP requests to REST endpoints easier and helps you perform CRUD operations*
+![Install Axios](./images/npm-instal-axios.PNG)
