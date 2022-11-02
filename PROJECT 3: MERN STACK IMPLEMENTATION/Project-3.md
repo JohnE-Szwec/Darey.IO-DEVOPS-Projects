@@ -171,3 +171,7 @@ Run the following command to install concurrently.
 *The server starts and is listening on port 3000*
 ![Start Server](./images/npm-run-dev.PNG)
 
+* __Set the inbound security rules on the EC2 instance hosting the application.__ <br/>
+* *Allow TCP port 3000*
+![Edit Security Group](./images/edit-inbound-security.PNG)
+
