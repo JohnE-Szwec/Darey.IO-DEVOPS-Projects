@@ -150,8 +150,8 @@ I make a couple of individual posts to the MongoDB. (only one post is illustrate
 ![Create React App](./images/create-react-app-2.PNG)
 
 * __Install React dependencies - Concurrently and nodemon__ <br/>
-Run the following command to install concurrently.
 *concurrently is used to run more than one command simultaneously from the same terminal window.* <br/>
+Run the following command to install concurrently. <br/>
 `npm install concurrently --save-dev` <br/>
 ![Install Concurrently](./images/install-concurrently.PNG)
 
