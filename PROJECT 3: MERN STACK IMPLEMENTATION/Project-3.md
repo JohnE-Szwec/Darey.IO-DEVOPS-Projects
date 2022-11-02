@@ -179,4 +179,5 @@ Run the following command to install concurrently.
 *Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML. <br/>
 When creating a React component, the component's name MUST start with an upper case letter.*
 These three new component files will be created inside the create-react-app client folder as follows <br/>
+<main application directory>/client/src/components/
 ![Cefrate Components Files](./images/create-components-files.PNG)
