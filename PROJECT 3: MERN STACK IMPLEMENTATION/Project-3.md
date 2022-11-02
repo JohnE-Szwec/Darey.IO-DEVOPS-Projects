@@ -145,7 +145,8 @@ I make a couple of individual posts to the MongoDB. (only one post is illustrate
 ## FRONTEND CREATION <br/>
 
 * __Create the React application.__ <br/>
-*Cerate React app sets up an assortment of basic web app elements; commands to test, build, and serve your app.* <br/>
+*Create React app sets up an assortment of basic web app elements; commands to test, build, and serve your app.* <br/>
+*In the create command below `client` is the name of the application* <br/>
 `npx create-react-app client` <br/>
 ![Create React App](./images/create-react-app-2.PNG)
 
