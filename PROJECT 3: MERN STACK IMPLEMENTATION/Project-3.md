@@ -161,3 +161,12 @@ Run the following command to install concurrently.
 
 * __Configure the package.json file located in the main application folder to piont to the newly installed react components .__ <br/>
 ![config Package JSON](./images/edit-package-json.PNG)
+
+* __Configure the package.json file located in the client folder which was created when I installed *create-react-app*.__ <br/>
+*The purpose of adding the proxy configuration makes it possible to access the application directly from the browser by simply calling the server url like http://localhost:5000 rather than always including the entire path like http://localhost:5000/api/todos*
+![config client-Package JSON](./images/edit-client-package-json.PNG)
+
+* __Start the applcationfrm the main app folder.__ <br/>
+*The server starts and is listening on port 3000*
+![Start Server](./images/npm-run-dev.PNG)
+
