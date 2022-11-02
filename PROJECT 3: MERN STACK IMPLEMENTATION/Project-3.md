@@ -325,3 +325,5 @@ let { todos } = this.state;
 
 export default Todo;
 ```
+* __moving up one folder from components to the src folder the App.js file is uppdated.__ <br/>
+![update App.js File](./images/edit-app-js.PNG)
