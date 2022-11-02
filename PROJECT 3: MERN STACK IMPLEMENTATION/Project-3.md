@@ -181,3 +181,54 @@ When creating a React component, the component's name MUST start with an upper c
 These three new component files will be created inside the create-react-app client folder as follows <br/>
 `<top-level-application-directory>/client/src/components/`
 ![Create Components Files](./images/create-components-files.PNG)
+
+
+* __Enter the following code into the Input.js component__ <br/>
+```
+import React, { Component } from 'react';
+import axios from 'axios';
+
+class Input extends Component {
+
+state = {
+action: ""
+}
+
+addTodo = () => {
+const task = {action: this.state.action}
+
+    if(task.action && task.action.length > 0){
+      axios.post('/api/todos', task)
+        .then(res => {
+          if(res.data){
+            this.props.getTodos();
+            this.setState({action: ""})
+          }
+        })
+        .catch(err => console.log(err))
+    }else {
+      console.log('input field required')
+    }
+
+}
+
+handleChange = (e) => {
+this.setState({
+action: e.target.value
+})
+}
+
+render() {
+let { action } = this.state;
+return (
+<div>
+<input type="text" onChange={this.handleChange} value={action} />
+<button onClick={this.addTodo}>add todo</button>
+</div>
+)
+}
+}
+
+export default Input
+```
+* __From the clients folder I install axios.__ <br/>
