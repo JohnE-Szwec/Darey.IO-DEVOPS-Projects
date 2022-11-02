@@ -176,7 +176,7 @@ Run the following command to install concurrently.
 ![Edit Security Group](./images/edit-inbound-security.PNG)
 
 * __Create React Components__ <br/>
-*Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
+*Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML. <br/>
 When creating a React component, the component's name MUST start with an upper case letter.*
 These three new component files will be created inside the create-react-app client folder as follows
-![Cefrate Components Files](./images/cerate-components-files.PNG)
+![Cefrate Components Files](./images/create-components-files.PNG)
