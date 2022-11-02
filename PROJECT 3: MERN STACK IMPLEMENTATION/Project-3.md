@@ -233,8 +233,8 @@ return (
 export default Input
 ```
 * __From the clients folder I install Axios.__ <br/>
-*Axios is an HTTP client library based on promises. It makes sending asynchronous HTTP requests to REST endpoints easier and helps you perform CRUD operations*
-![Install Axios](./images/npm-instal-axios.PNG)
+*Axios is an HTTP client library based on promises. It makes sending asynchronous HTTP requests to REST endpoints easier and helps you perform CRUD operations* <br/>
+![Install Axios](./images/npm-install-axios.PNG)
 
 * __Edit the ListTodo.js file__ <br/>
 *Back in the folder `<top-level-application-directory>/client/src/components/`* <br/>
