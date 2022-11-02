@@ -419,5 +419,9 @@ margin-top: 0;
 }
 ```
 
-* __Now that I have configured all the components of the React application I can start it up__ <br/>
+* __Now that I have configured all the components of the React application I can start it up to pull in all the newly configured components__ <br/>
 `npm run dev' command
+
+* __Now I am able to connect to my application from my local browser on port 3000.__ <br/>
+*I have added two new records as indicsated in the screen shot*
+![Add-records-with-React](./images/project-successful.PNG)
