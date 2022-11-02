@@ -423,5 +423,10 @@ margin-top: 0;
 `npm run dev' command
 
 * __Now I am able to connect to my application from my local browser on port 3000.__ <br/>
-*I have added two new records as indicsated in the screen shot*
+*I have added two new records as indicated in the screen shot*
 ![Add-records-with-React](./images/project-successful.PNG)
+
+* __The final check of my new MERN applicaiton stack is to check the two new records in the MongoDB.__ <br/>
+*I can see my new records were added sucessfully to my MongoDB*
+![React Added Records Exist](./images/mlab-mongodb-project-successful.PNG)
+
