@@ -172,12 +172,13 @@ Run the following command to install concurrently. <br/>
 ![Start Server](./images/npm-run-dev.PNG)
 
 * __Set the inbound security rules on the EC2 instance hosting the application.__ <br/>
-* *Allow TCP port 3000*
+*Allow TCP port 3000*
 ![Edit Security Group](./images/edit-inbound-security.PNG)
 
 * __Create React Components__ <br/>
 *Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML. <br/>
-When creating a React component, the component's name MUST start with an upper case letter.*
+When creating a React component, the component's name MUST start with an upper case letter.* <br/>
+
 These three new component files will be created inside the create-react-app client folder as follows <br/>
 `<top-level-application-directory>/client/src/components/`
 ![Create Components Files](./images/create-components-files.PNG)
