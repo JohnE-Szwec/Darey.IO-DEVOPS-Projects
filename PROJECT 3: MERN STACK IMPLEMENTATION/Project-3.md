@@ -418,3 +418,6 @@ margin-top: 0;
 }
 }
 ```
+
+* __Now that i have configured all the components of the React application I can start it up__ <br/>
+`npm run dev'
