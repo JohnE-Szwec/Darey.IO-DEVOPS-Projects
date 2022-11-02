@@ -167,7 +167,7 @@ Run the following command to install concurrently.
 ![config client-Package JSON](./images/edit-client-package-json.PNG)
 
 * __Start the applcation from the main app folder.__ <br/>
-`npm-run-dev` <br/>
+`npm run dev` <br/>
 *The server starts and is listening on port 3000*
 ![Start Server](./images/npm-run-dev.PNG)
 
