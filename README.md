@@ -1,7 +1,7 @@
-# <center>DevOps_Projects</center>
+# <div align="center"> DevOps_Projects </div>
 
 
-## <div align="center"> John Szwec's portfolio of the Darey.IO DevOps Projects </center> </div>
+# <div align="center"> John Szwec's portfolio of the Darey.IO DevOps Projects </div>
 
 #
 ![](./images/banner2.jfif)
