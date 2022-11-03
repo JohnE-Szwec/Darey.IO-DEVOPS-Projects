@@ -12,9 +12,9 @@ sudo apt install nginx        # install NGINX
 
 ![updatepackageindex](./images/packageindex.png)
 __Confirm install by answering "y"__
-![Nginxconfirnm](./images/nginxconfirminstall2.PNG)
+![Nginxconfirnm](./images/nginxconfirminstall2.png)
 __When the install procedure returns to the console prompt.. I ensure NGINX is active ---> See the green text active (running) status__
-![Nginxrunning](./images/nginxrunning2.PNG)
+![Nginxrunning](./images/nginxrunning2.png)
 
 ###### * I have edited my security group to allow inbound connections on HTTP TCP port 80 which is the default port that web browsers use to access web pages on the Internet.
 
@@ -37,7 +37,7 @@ curl -s http://169.254.169.254/latest/meta-data/public-ipv4
 And use the returned IP address in my URL as follows:
 
 My new NGINX server is responding to my requests over the Internet made from my local browser.
-![RespondsOverInternet](./images/respondsoverinternet.PNG)
+![RespondsOverInternet](./images/respondsoverinternet.png)
 
 ___
 ### <div align="center"> Step 2) - Installing MySQL </div>
@@ -47,12 +47,12 @@ I use ‘apt’ run from the SSH session to acquire and install this software:
 ```
 sudo apt install mysql-server
 ```
-![InstallSQL](./images/Installmysqlserver.PNG)
+![InstallSQL](./images/Installmysqlserver.png)
 I then check if SQL is up and running after the install with the command
 ```
 systemctl status mysql
 ```
-![SQL-running](./images/sqlrunning.PNG)
+![SQL-running](./images/sqlrunning.png)
 Now i am able to login as root (which is inferred by the use of sudo) to the Mysql server from the remote console <br/>
 At this time I will also set a password for the root user using the following commands
 
@@ -64,7 +64,7 @@ This brings me to a mysql> prompt on the console
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '******';
 ```
 
-![login-SQL](./images/loginandsetpassword.PNG)
+![login-SQL](./images/loginandsetpassword.png)
 I then exit the mysql shell with the exit command
 ```
 mysql> exit
@@ -72,13 +72,13 @@ mysql> exit
 At this point it is recommended that you run a security script that comes pre-installed with MySQL. This script will remove some insecure default settings and lock down access to your database system <br/>
 In most of the configurations presented I provided the most restrictive responses
 
-![SQL-secure](./images/sqlsecurityscript.PNG)
+![SQL-secure](./images/sqlsecurityscript.png)
 
 Now I test to see if i can log into mysql console with the previously configured password utilizing the ALTER USER command
 ```
 sudo mysql -p
 ```
-![SQL-login](./images/lognsqlwithpassword.PNG)
+![SQL-login](./images/lognsqlwithpassword.png)
 I am able to successfully login to my SQL server with the configured password
 ___
 ### <div align="center"> Step 3) - Installing PHP </div>
@@ -92,7 +92,7 @@ sudo apt install php-fpm php php-mysql
 ```
 And then check the version with php -v
 
-![PHP-version](./images/installphpandversion.PNG)
+![PHP-version](./images/installphpandversion.png)
 ___
 ### <div align="center"> Step 4 - Configuring NGINX to Use PHP Processor </div>
 NGINX uses server blocks to host more than one domain on a single server.
@@ -102,7 +102,7 @@ sudo mkdir /var/www/lempproject                          ### Ceate Web dcoument 
 sudo chown -R $USER:$USER /var/www/lempproject           ### Assign ownership of the new Web docuemnt directory to the current system user
 sudo nano /etc/nginx/sites-available/lempproject.conf    ### Create new configuration for NGINX's sites-available
 ```
-![configure-PHP](./images/configurephp.PNG)
+![configure-PHP](./images/configurephp.png)
 Edit the contents of the new configuraion file - lempproject.conf
 ```
 #/etc/nginx/sites-available/lempproject
@@ -135,7 +135,7 @@ This will create a soft link to tell Nginx to use the configuration next time it
 sudo ln -s /etc/nginx/sites-available/lempproject /etc/nginx/sites-enabled/
 sudo nginx -t
 ```
-![Link-and Check](./images/symboliclinkandcheck.PNG)
+![Link-and Check](./images/symboliclinkandcheck.png)
 
 Disable the default Nginx host that is currently configured to listen on 
 ```
@@ -150,7 +150,7 @@ sudo echo 'Hello LAMP from hostname' $(curl -s http://169.254.169.254/latest/met
 $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/lempproject/index.html
 ```
 My Apache virtual host is working as expected. I can access it from my local machines browser using it's DNS name.
-![VirtualHostWorking](./images/connecttolempweb.PNG)
+![VirtualHostWorking](./images/connecttolempweb.png)
 
  In the next step, i will create a PHP script to test that Nginx is in fact able to handle .php files within my newly configured website.
 ___
@@ -172,7 +172,7 @@ phpinfo();
 This is valid PHP code that will return information about my server.
 
 My local browser is successful in retrieving data from my new NGINX webserver utilizing PHP interpreter
-![PHPWorking](./images/phpsuccess.PNG)
+![PHPWorking](./images/phpsuccess.png)
 
 ___
 ### <div align="center"> Step 6) - Retrieving data from MySQL database with PHP </div>
@@ -185,13 +185,13 @@ mysql> CREATE DATABASE `example_database`;
 mysql>  CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
 mysql> GRANT ALL ON example_database.* TO 'example_user'@'%';
 ```
-![Create-Base](./images/createsqldbanduser.PNG)
+![Create-Base](./images/createsqldbanduser.png)
 
 Now I test that my new database user 'example_user' can access the database locally.
-![NewUserAccessDB](./images/newuseraccessdb.PNG)
+![NewUserAccessDB](./images/newuseraccessdb.png)
 
 While loogged in locally to the example_datbase as the example_user, I have created a table named todo_list and enterd some lines of data.
-![Enterdata](./images/enterdatbasedata-1.PNG)
+![Enterdata](./images/enterdatbasedata-1.png)
 
 Then created a PHP script that will connect to MySQL and query for my content. <br/>
 Created a php file in my web folder
@@ -223,5 +223,5 @@ try {
 
 Then I tested that the MySQL database data can be accessed over the Internet via the PHP Interpreter.
 Successfully retrieved the data over the Internet via a web browser.
-![Access-DataBase](./images/accesssqlviabrowser.PNG)
+![Access-DataBase](./images/accesssqlviabrowser.png)
 
