@@ -238,7 +238,7 @@ export default Input
 ![Install Axios](./images/npm-install-axios.PNG)
 
 * __Edit the ListTodo.js file__ <br/>
-*Back in the folder `<top-level-application-directory>/client/src/components/`* <br/>
+*Back in the folder <br/>`<top-level-application-directory>/client/src/components/`* <br/>
 I enter the following code in to the ListTodo.js file
 ![Edit ListTodo](./images/edit-listtodo-js.PNG)
 
