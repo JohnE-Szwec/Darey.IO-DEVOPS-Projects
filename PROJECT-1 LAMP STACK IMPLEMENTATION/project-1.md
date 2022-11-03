@@ -151,4 +151,58 @@ php -v
 ___
 ### <div align="center"> Step 4) Creatring a virtual host for my website using Apache </div>
 To test my setup with a PHP script, I will set up a proper Apache Virtual Host to hold my website’s files and folders. Virtual host allows me to have multiple websites located on a single machine and users of my websites will not even notice it. (illistrated below) <br/>
-![virtualhosts](./images/VirtualHost.PNG)
+![VirtualHost](./images/VirtualHost.png)
+
+I will create the directory for my lamproject using ‘mkdir’ command as follows:
+```
+sudo mkdir /var/www/lampproject                          ### Ceate Web dcoument directory
+sudo chown -R $USER:$USER /var/www/lampproject           ### Assign ownership of new Web docuemnt directory to curent system user
+sudo vi /etc/apache2/sites-available/lampproject.conf    ### Create new configuration for for Apaches sites-availalble
+```
+Contents of new configuraion file - lampproject.conf
+```
+<VirtualHost *:80>
+    ServerName projectlamp
+    ServerAlias www.projectlamp 
+    ServerAdmin webmaster@localhost
+    DocumentRoot /var/www/projectlamp------------------- ### This line configures my new directory as Apache's web root directory
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+```
+Now I use the following set of commands to enable my new virtual host and disable Apaches default website and then reload apache.
+```
+sudo a2ensite lampproject                                ### 
+sudo a2dissite 000-default                               ###
+sudo apache2ctl configtest                               ###  make sure my configuration file doesn’t contain syntax errors
+sudo systemctl reload apache2                            ###
+```
+
+Now I will create an index.html file in my /var/www/projectlamp folder so that I can test that the virtual host works as expected:
+
+```
+sudo echo 'Hello LAMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' <br/> 
+$(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectlamp/index.html
+```
+My Apache virtual host is working as expected. I can access it from my local machines browser using it's DNS name.
+![VirtualHostWorking](./images/websitefrombrowser.PNG)
+
+___
+### <div align="center"> Step 5) Enable PHP on my website </div>
+Modify the /etc/apache2/mods-enabled/dir.conf in order to change Apache's default behavior which is to load an html file over a php file <br/>
+and restart apache 
+```
+<IfModule mod_dir.c>
+                DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
+</IfModule>
+```
+I create a new index.php file in my custonm web root folder and add teh following code
+_vim /var/www/projectlamp/index.php_
+```
+<?php
+phpinfo();
+```
+
+Finally , the browser renders the following page which provides inforamtion about my server from the perspective of PHP.
+
+![PHPPageWorking](./images/phppagerendered.PNG)
