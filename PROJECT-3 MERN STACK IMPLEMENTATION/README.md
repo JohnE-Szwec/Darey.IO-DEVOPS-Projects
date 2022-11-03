@@ -240,34 +240,7 @@ export default Input
 * __Edit the ListTodo.js file__ <br/>
 *Back in the folder `<top-level-application-directory>/client/src/components/`* <br/>
 I enter the following code in to the ListTodo.js file
-```
-import React from 'react';
-
-const ListTodo = ({ todos, deleteTodo }) => {
-
-return (
-<ul>
-{
-todos &&
-todos.length > 0 ?
-(
-todos.map(todo => {
-return (
-<li key={todo._id} onClick={() => deleteTodo(todo._id)}>{todo.action}</li>
-)
-})
-)
-:
-(
-<li>No todo(s) left</li>
-)
-}
-</ul>
-)
-}
-
-export default ListTodo
-```
+![Edit ListTodo](./images/edit-listtodo-js.PNG)
 
 * __In the same components folder the Todo.js file is uppdated.__ <br/>
 ```
