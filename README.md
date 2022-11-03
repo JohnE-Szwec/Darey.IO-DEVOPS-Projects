@@ -4,6 +4,4 @@
 ## <div align="center"> John Szwec's portfolio of the Darey.IO DevOps Projects </center> </div>
 
 #
-![](./img/banner.jfif)
-#
-![](./img/banner2.jfif)
+![](./images/banner2.jfif)
