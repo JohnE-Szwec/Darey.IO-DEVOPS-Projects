@@ -10,7 +10,7 @@ sudo apt update               # upate the servers package index
 sudo apt install nginx        # install NGINX
 ```
 
-![updatepackageindex](./images/packageindex.PNG)
+![updatepackageindex](./images/packageindex.png)
 __Confirm install by answering "y"__
 ![Nginxconfirnm](./images/nginxconfirminstall2.PNG)
 __When the install procedure returns to the console prompt.. I ensure NGINX is active ---> See the green text active (running) status__
@@ -23,7 +23,7 @@ First, I check if i can access my NGINX server locally from my Ubuntu shell usin
 curl http://127.0.0.1:80
 ```
 My NGINX web service responds to the ‘curl’ command with some payload.
-![Nginxresponds](./images/nginxresponds.PNG)
+![Nginxresponds](./images/nginxresponds.png)
 
 Now it is time for me to test if my NGINX server can respond to requests from the Internet.
 From my web browser I try to access the NGINX server with the following url
