@@ -30,7 +30,7 @@ I saved this file to my local laptop. (I will need to change permissions on it i
   * The keypair is need to securely connect to the new EC2 instance from my local computer.
 ![KeyPair selection](./images/keypair-1.PNG)
 
-Also during the creation I chose the __security group__ i had crated in a previuos step. 
+Also during the creation I chose the __security group__ I had crated in a previuos step. 
 ![scegrp-select-](./images/ec2secgrpsel.PNG)
 When my EC2 instance is completed the Instance state will indicate runnnig. I also ensured the __Status Check__ is 2/2 checks passed
 
