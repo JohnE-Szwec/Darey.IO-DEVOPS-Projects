@@ -20,7 +20,7 @@ Then click create security group on the orange button on the upper right corner 
 ![securityGroup](./images/createsecgrp.PNG) <br/>
 
 
-On the creation page i  added a new security group name and a description, clicked add rule under inbound rules to add source ip address. I chose Custom TCP i the __type__ section and entered 22 the (SSH TCP port) in the __port range__ seection. I entered my WAN IP address in the Source IP address box with a /32 so only I have acess to the instance
+On the creation page I  added a new security group name and a description, clicked add rule under inbound rules to add source ip address. I chose Custom TCP in the __type__ section and entered 22 the (SSH TCP port) in the __port range__ seection. I entered my WAN IP address in the Source IP address box with a /32 so only I have acess to the instance
 
 ![securityGroup](./images/secgrp2.PNG)
 
