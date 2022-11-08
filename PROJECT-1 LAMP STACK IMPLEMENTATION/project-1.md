@@ -24,7 +24,7 @@ On the creation page I  added a new security group name and a description, click
 
 ![securityGroup](./images/secgrp2.PNG)
 
-From an AWS account create an EC2 Ubuntu instance. During the creation select the create new key pair buttonn in the key pair header of the creation options.
+From an AWS account create an EC2 Ubuntu instance. During the creation select the create new key pair button in the key pair header of the creation options.
 I saved this file to my local laptop. (I will need to change permissions on it in the next step.
 
   * The keypair is need to securely connect to the new EC2 instance from my local computer.
